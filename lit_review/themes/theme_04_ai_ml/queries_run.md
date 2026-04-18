@@ -1,0 +1,59 @@
+# Queries Run — theme_04: AI/ML in lung cancer and oncology
+
+- `machine learning AND lung cancer AND (subtype OR classification)`
+  - pubmed: 800 results
+  - europepmc: 185 results
+- `deep learning AND NSCLC AND classification`
+  - pubmed: 130 results
+  - europepmc: 192 results
+- `unsupervised learning AND lung cancer AND molecular`
+  - pubmed: 38 results
+  - europepmc: 190 results
+- `deep learning AND lung cancer AND histopathology`
+  - pubmed: 800 results
+- `convolutional neural network AND NSCLC AND pathology`
+  - pubmed: 71 results
+- `whole slide image AND lung cancer AND deep learning`
+  - pubmed: 184 results
+- `self-supervised learning AND pathology AND cancer`
+  - pubmed: 194 results
+- `radiogenomics AND lung cancer`
+  - pubmed: 190 results
+- `radiomics AND NSCLC AND (survival OR response)`
+  - pubmed: 589 results
+- `radiomics AND immunotherapy AND lung`
+  - pubmed: 311 results
+- `artificial intelligence AND immunotherapy response AND (lung OR NSCLC)`
+  - pubmed: 298 results
+- `machine learning AND checkpoint inhibitor AND lung cancer`
+  - pubmed: 239 results
+- `deep learning AND PD-L1 AND lung`
+  - pubmed: 87 results
+- `foundation model AND (pathology OR oncology)`
+  - pubmed: 800 results
+- `large language model AND oncology`
+  - pubmed: 800 results
+- `transformer AND pathology AND cancer`
+  - pubmed: 800 results
+- `vision language model AND pathology`
+  - pubmed: 224 results
+- `multi-modal AND deep learning AND oncology`
+  - pubmed: 308 results
+- `multi-omics AND machine learning AND cancer`
+  - pubmed: 800 results
+- `fusion model AND cancer AND outcome`
+  - pubmed: 800 results
+- `deep learning AND survival AND lung cancer`
+  - pubmed: 755 results
+- `machine learning AND prognosis AND NSCLC`
+  - pubmed: 466 results
+- `neural network AND survival prediction AND cancer`
+  - pubmed: 800 results
+- `external validation AND machine learning AND cancer`
+  - pubmed: 800 results
+- `bias AND machine learning AND clinical AND cancer`
+  - pubmed: 800 results
+- `reproducibility AND AI AND oncology`
+  - pubmed: 800 results
+- `generalizability AND deep learning AND medical imaging`
+  - pubmed: 800 results
