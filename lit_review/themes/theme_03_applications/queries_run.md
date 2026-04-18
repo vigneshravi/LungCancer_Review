@@ -1,0 +1,29 @@
+# Queries Run — theme_03: Multi-omics applications in lung cancer
+
+- `multi-omics AND lung cancer AND (subtype OR classification OR clustering)`
+  - pubmed: 399 results
+  - europepmc: 189 results
+- `proteogenomic AND lung cancer`
+  - pubmed: 82 results
+  - europepmc: 180 results
+- `integrative AND (transcriptome OR methylome OR proteome) AND (LUAD OR LUSC OR SCLC)`
+  - pubmed: 706 results
+  - europepmc: 192 results
+- `multi-platform AND lung adenocarcinoma`
+  - pubmed: 9 results
+- `multi-omics AND NSCLC AND immunotherapy`
+  - pubmed: 108 results
+- `multi-omics AND lung cancer AND prognosis`
+  - pubmed: 557 results
+- `multi-omics AND lung cancer AND drug response`
+  - pubmed: 207 results
+- `integrative genomics AND lung cancer AND survival`
+  - pubmed: 800 results
+- `multi-omics AND tumor microenvironment AND lung`
+  - pubmed: 413 results
+- `multi-omics AND radiation therapy AND lung`
+  - pubmed: 96 results
+- `proteogenomics AND NSCLC AND driver`
+  - pubmed: 6 results
+- `multi-omics AND early detection AND lung`
+  - pubmed: 159 results
