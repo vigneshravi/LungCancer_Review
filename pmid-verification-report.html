@@ -1,0 +1,2281 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>PMID Verification Report · Lung Cancer Multi-Omics & AI/ML Literature Review</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="author" content="Vignesh Ravichandran">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="part-4-the-library/file-guide.html" />
+    
+
+    <style>
+/* ============================================
+   Lung Cancer Multi-Omics Review — Custom Theme
+   Rich, colorful, scientific
+   ============================================ */
+
+/* --- Base colors --- */
+:root {
+  --primary: #1a6b8a;
+  --primary-light: #2d9cc3;
+  --accent-coral: #e8655a;
+  --accent-gold: #d4a843;
+  --accent-teal: #2ba5a5;
+  --accent-purple: #7b68ae;
+  --accent-green: #4caf7d;
+  --bg-light: #fafbfd;
+  --bg-callout: #f0f7fb;
+  --text-main: #2c3e50;
+  --border-subtle: #dce4ec;
+}
+
+/* --- Page body --- */
+.book .book-body .page-wrapper .page-inner {
+  max-width: 900px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-main);
+  line-height: 1.75;
+}
+
+/* --- Headings --- */
+h1 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--accent-coral);
+  padding-bottom: 12px;
+  font-size: 2.2em;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: var(--primary-light);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 8px;
+  margin-top: 2.5em;
+  font-size: 1.6em;
+}
+
+h3 {
+  color: var(--accent-teal);
+  font-size: 1.3em;
+  margin-top: 2em;
+}
+
+h4 {
+  color: var(--accent-purple);
+  font-size: 1.1em;
+}
+
+/* --- Blockquotes (callouts) --- */
+blockquote {
+  border-left: 5px solid var(--accent-coral);
+  background: linear-gradient(135deg, #fef5f4 0%, #fdf0ee 100%);
+  padding: 16px 24px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #4a3333;
+  box-shadow: 0 2px 8px rgba(232, 101, 90, 0.08);
+}
+
+blockquote strong {
+  color: var(--accent-coral);
+  font-style: normal;
+}
+
+/* Alternating callout styles for variety */
+blockquote + blockquote {
+  border-left-color: var(--accent-teal);
+  background: linear-gradient(135deg, #f0fafa 0%, #e8f6f6 100%);
+  color: #2a4444;
+}
+
+blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-gold);
+  background: linear-gradient(135deg, #fdf8ed 0%, #faf3e0 100%);
+  color: #4a3f22;
+}
+
+blockquote + blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-purple);
+  background: linear-gradient(135deg, #f5f2fa 0%, #ede8f5 100%);
+  color: #3d2d5c;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+table thead tr {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+}
+
+table thead th {
+  padding: 12px 16px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:hover {
+  background-color: #e8f4f8;
+  transition: background-color 0.2s ease;
+}
+
+table tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table tbody td strong {
+  color: var(--primary);
+}
+
+/* --- Links --- */
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--primary-light);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-coral);
+  border-bottom-color: var(--accent-coral);
+}
+
+/* --- Code blocks --- */
+pre {
+  background: linear-gradient(180deg, #1e2d3d 0%, #253443 100%);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #364958;
+}
+
+code {
+  background-color: #eef3f8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  color: var(--accent-coral);
+}
+
+pre code {
+  background: none;
+  color: #d4dce4;
+  padding: 0;
+}
+
+/* --- Horizontal rules --- */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent-coral), var(--accent-gold), var(--accent-teal), var(--accent-purple));
+  margin: 40px 0;
+  border-radius: 2px;
+}
+
+/* --- Images (infographics) --- */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
+  border: 2px solid var(--border-subtle);
+}
+
+/* --- Sidebar navigation --- */
+.book .book-summary {
+  background: linear-gradient(180deg, #1a2332 0%, #1e2d3d 100%);
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: #b8c9d9;
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: white;
+  background: rgba(45, 156, 195, 0.2);
+  border-left: 3px solid var(--accent-coral);
+}
+
+.book .book-summary ul.summary li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Bold PASS/STRONG/etc in tables --- */
+td:last-child {
+  font-weight: 500;
+}
+
+/* --- Special markers --- */
+em {
+  color: #5a6b7d;
+}
+
+/* --- Infographic captions --- */
+p > em:only-child {
+  display: block;
+  text-align: center;
+  color: #7a8b9d;
+  font-size: 0.9em;
+  margin-top: -12px;
+}
+
+</style>
+<style>
+/* ============================================
+   Lung Cancer Multi-Omics Review — Custom Theme
+   Rich, colorful, scientific
+   ============================================ */
+
+/* --- Base colors --- */
+:root {
+  --primary: #1a6b8a;
+  --primary-light: #2d9cc3;
+  --accent-coral: #e8655a;
+  --accent-gold: #d4a843;
+  --accent-teal: #2ba5a5;
+  --accent-purple: #7b68ae;
+  --accent-green: #4caf7d;
+  --bg-light: #fafbfd;
+  --bg-callout: #f0f7fb;
+  --text-main: #2c3e50;
+  --border-subtle: #dce4ec;
+}
+
+/* --- Page body --- */
+.book .book-body .page-wrapper .page-inner {
+  max-width: 900px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-main);
+  line-height: 1.75;
+}
+
+/* --- Headings --- */
+h1 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--accent-coral);
+  padding-bottom: 12px;
+  font-size: 2.2em;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: var(--primary-light);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 8px;
+  margin-top: 2.5em;
+  font-size: 1.6em;
+}
+
+h3 {
+  color: var(--accent-teal);
+  font-size: 1.3em;
+  margin-top: 2em;
+}
+
+h4 {
+  color: var(--accent-purple);
+  font-size: 1.1em;
+}
+
+/* --- Blockquotes (callouts) --- */
+blockquote {
+  border-left: 5px solid var(--accent-coral);
+  background: linear-gradient(135deg, #fef5f4 0%, #fdf0ee 100%);
+  padding: 16px 24px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #4a3333;
+  box-shadow: 0 2px 8px rgba(232, 101, 90, 0.08);
+}
+
+blockquote strong {
+  color: var(--accent-coral);
+  font-style: normal;
+}
+
+/* Alternating callout styles for variety */
+blockquote + blockquote {
+  border-left-color: var(--accent-teal);
+  background: linear-gradient(135deg, #f0fafa 0%, #e8f6f6 100%);
+  color: #2a4444;
+}
+
+blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-gold);
+  background: linear-gradient(135deg, #fdf8ed 0%, #faf3e0 100%);
+  color: #4a3f22;
+}
+
+blockquote + blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-purple);
+  background: linear-gradient(135deg, #f5f2fa 0%, #ede8f5 100%);
+  color: #3d2d5c;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+table thead tr {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+}
+
+table thead th {
+  padding: 12px 16px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:hover {
+  background-color: #e8f4f8;
+  transition: background-color 0.2s ease;
+}
+
+table tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table tbody td strong {
+  color: var(--primary);
+}
+
+/* --- Links --- */
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--primary-light);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-coral);
+  border-bottom-color: var(--accent-coral);
+}
+
+/* --- Code blocks --- */
+pre {
+  background: linear-gradient(180deg, #1e2d3d 0%, #253443 100%);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #364958;
+}
+
+code {
+  background-color: #eef3f8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  color: var(--accent-coral);
+}
+
+pre code {
+  background: none;
+  color: #d4dce4;
+  padding: 0;
+}
+
+/* --- Horizontal rules --- */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent-coral), var(--accent-gold), var(--accent-teal), var(--accent-purple));
+  margin: 40px 0;
+  border-radius: 2px;
+}
+
+/* --- Images (infographics) --- */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
+  border: 2px solid var(--border-subtle);
+}
+
+/* --- Sidebar navigation --- */
+.book .book-summary {
+  background: linear-gradient(180deg, #1a2332 0%, #1e2d3d 100%);
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: #b8c9d9;
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: white;
+  background: rgba(45, 156, 195, 0.2);
+  border-left: 3px solid var(--accent-coral);
+}
+
+.book .book-summary ul.summary li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Bold PASS/STRONG/etc in tables --- */
+td:last-child {
+  font-weight: 500;
+}
+
+/* --- Special markers --- */
+em {
+  color: #5a6b7d;
+}
+
+/* --- Infographic captions --- */
+p > em:only-child {
+  display: block;
+  text-align: center;
+  color: #7a8b9d;
+  font-size: 0.9em;
+  margin-top: -12px;
+}
+
+</style>
+</head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I: The Search</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="part-1-the-search/scale-and-methodology.html">
+            
+                <a href="part-1-the-search/scale-and-methodology.html">
+            
+                    
+                    Scale and Methodology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="part-1-the-search/themes-at-a-glance.html">
+            
+                <a href="part-1-the-search/themes-at-a-glance.html">
+            
+                    
+                    The Twelve Themes at a Glance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="part-1-the-search/top-20-papers.html">
+            
+                <a href="part-1-the-search/top-20-papers.html">
+            
+                    
+                    The 20 Papers That Define the Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part II: The Landscape</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="part-2-the-landscape/01-molecular-heterogeneity.html">
+            
+                <a href="part-2-the-landscape/01-molecular-heterogeneity.html">
+            
+                    
+                    01 -- Molecular Heterogeneity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="part-2-the-landscape/02-multi-omics-methods.html">
+            
+                <a href="part-2-the-landscape/02-multi-omics-methods.html">
+            
+                    
+                    02 -- Multi-Omics Integration Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="part-2-the-landscape/03-multi-omics-applications.html">
+            
+                <a href="part-2-the-landscape/03-multi-omics-applications.html">
+            
+                    
+                    03 -- Multi-Omics Applications in Lung Cancer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="part-2-the-landscape/04-ai-ml.html">
+            
+                <a href="part-2-the-landscape/04-ai-ml.html">
+            
+                    
+                    04 -- AI/ML in Lung Cancer and Oncology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="part-2-the-landscape/05-sex-gender.html">
+            
+                <a href="part-2-the-landscape/05-sex-gender.html">
+            
+                    
+                    05 -- Sex and Gender Differences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="part-2-the-landscape/06-never-smoker.html">
+            
+                <a href="part-2-the-landscape/06-never-smoker.html">
+            
+                    
+                    06 -- Never-Smoker Lung Cancer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="part-2-the-landscape/07-environmental.html">
+            
+                <a href="part-2-the-landscape/07-environmental.html">
+            
+                    
+                    07 -- Environmental Exposures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="part-2-the-landscape/08-epigenetics.html">
+            
+                <a href="part-2-the-landscape/08-epigenetics.html">
+            
+                    
+                    08 -- Epigenetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="part-2-the-landscape/09-immune-biomarkers.html">
+            
+                <a href="part-2-the-landscape/09-immune-biomarkers.html">
+            
+                    
+                    09 -- Immune Biomarkers and Immunotherapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="part-2-the-landscape/10-translational.html">
+            
+                <a href="part-2-the-landscape/10-translational.html">
+            
+                    
+                    10 -- Translational Bottleneck and Real-World Outcomes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="part-2-the-landscape/11-drug-repurposing.html">
+            
+                <a href="part-2-the-landscape/11-drug-repurposing.html">
+            
+                    
+                    11 -- Drug Repurposing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="part-2-the-landscape/12-emerging-frontiers.html">
+            
+                <a href="part-2-the-landscape/12-emerging-frontiers.html">
+            
+                    
+                    12 -- Emerging Frontiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="part-2-the-landscape/13-feature-selection.html">
+            
+                <a href="part-2-the-landscape/13-feature-selection.html">
+            
+                    
+                    13 -- The Feature Selection Problem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part III: The Gaps</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="part-3-the-gaps/critical-gaps.html">
+            
+                <a href="part-3-the-gaps/critical-gaps.html">
+            
+                    
+                    Critical Gaps Across All Themes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="part-3-the-gaps/surprising-findings.html">
+            
+                <a href="part-3-the-gaps/surprising-findings.html">
+            
+                    
+                    Surprising Findings and Writing Recommendations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part IV: The Library</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="part-4-the-library/file-guide.html">
+            
+                <a href="part-4-the-library/file-guide.html">
+            
+                    
+                    File Guide and Access
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Appendix</li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="pmid-verification-report.html">
+            
+                <a href="pmid-verification-report.html">
+            
+                    
+                    PMID Verification Report
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >PMID Verification Report</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="pmid-verification-report">PMID Verification Report</h1>
+<p><strong>Total PMIDs checked: 155</strong></p>
+<p><strong>Valid: 155 | Not Found: 0</strong></p>
+<h2 id="results">Results</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">PMID</th>
+<th style="text-align:center">Status</th>
+<th style="text-align:left">First Author</th>
+<th style="text-align:left">Journal</th>
+<th style="text-align:left">Year</th>
+<th style="text-align:left">Title (truncated)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">10394308</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Lipsett M</td>
+<td style="text-align:left">Am J Public Health</td>
+<td style="text-align:left">1999</td>
+<td style="text-align:left">Occupational exposure to diesel exhaust and lung cancer: a meta-analysis.</td>
+</tr>
+<tr>
+<td style="text-align:left">10519898</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Bach PB</td>
+<td style="text-align:left">N Engl J Med</td>
+<td style="text-align:left">1999</td>
+<td style="text-align:left">Racial differences in the treatment of early-stage lung cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">11719467</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Osada H</td>
+<td style="text-align:left">Cancer Res</td>
+<td style="text-align:left">2001</td>
+<td style="text-align:left">Heterogeneous transforming growth factor (TGF)-beta unresponsiveness and loss of</td>
+</tr>
+<tr>
+<td style="text-align:left">11879110</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Pope CA 3rd</td>
+<td style="text-align:left">JAMA</td>
+<td style="text-align:left">2002</td>
+<td style="text-align:left">Lung cancer, cardiopulmonary mortality, and long-term exposure to fine particula</td>
+</tr>
+<tr>
+<td style="text-align:left">11905727</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Siegfried JM</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2001</td>
+<td style="text-align:left">Women and lung cancer: does oestrogen play a role?</td>
+</tr>
+<tr>
+<td style="text-align:left">1347094</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Vähäkangas KH</td>
+<td style="text-align:left">Lancet</td>
+<td style="text-align:left">1992</td>
+<td style="text-align:left">Mutations of p53 and ras genes in radon-associated lung cancer from uranium mine</td>
+</tr>
+<tr>
+<td style="text-align:left">15082704</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Patel JD</td>
+<td style="text-align:left">JAMA</td>
+<td style="text-align:left">2004</td>
+<td style="text-align:left">Lung cancer in US women: a contemporary epidemic.</td>
+</tr>
+<tr>
+<td style="text-align:left">16189362</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Schabath MB</td>
+<td style="text-align:left">JAMA</td>
+<td style="text-align:left">2005</td>
+<td style="text-align:left">Dietary phytoestrogens and lung cancer risk.</td>
+</tr>
+<tr>
+<td style="text-align:left">17186018</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Lamb J</td>
+<td style="text-align:left">Nat Rev Cancer</td>
+<td style="text-align:left">2007</td>
+<td style="text-align:left">The Connectivity Map: a new tool for biomedical research.</td>
+</tr>
+<tr>
+<td style="text-align:left">17882278</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Sun S</td>
+<td style="text-align:left">Nat Rev Cancer</td>
+<td style="text-align:left">2007</td>
+<td style="text-align:left">Lung cancer in never smokers--a different disease.</td>
+</tr>
+<tr>
+<td style="text-align:left">17974992</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Mah V</td>
+<td style="text-align:left">Cancer Res</td>
+<td style="text-align:left">2007</td>
+<td style="text-align:left">Aromatase expression predicts survival in women with early-stage non small cell</td>
+</tr>
+<tr>
+<td style="text-align:left">18488029</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Kondo Y</td>
+<td style="text-align:left">Nat Genet</td>
+<td style="text-align:left">2008</td>
+<td style="text-align:left">Gene silencing in cancer by histone H3 lysine 27 trimethylation independent of p</td>
+</tr>
+<tr>
+<td style="text-align:left">18598932</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Subramanian J</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2008</td>
+<td style="text-align:left">Molecular genetics of lung cancer in people who have never smoked.</td>
+</tr>
+<tr>
+<td style="text-align:left">18804418</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Linardou H</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2008</td>
+<td style="text-align:left">Assessment of somatic k-RAS mutations as a mechanism associated with resistance</td>
+</tr>
+<tr>
+<td style="text-align:left">19759197</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Shen R</td>
+<td style="text-align:left">Bioinformatics</td>
+<td style="text-align:left">2009</td>
+<td style="text-align:left">Integrative clustering of multiple genomic data types using a joint latent varia</td>
+</tr>
+<tr>
+<td style="text-align:left">19767090</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Chlebowski RT</td>
+<td style="text-align:left">Lancet</td>
+<td style="text-align:left">2009</td>
+<td style="text-align:left">Oestrogen plus progestin and lung cancer in postmenopausal women (Women's Health</td>
+</tr>
+<tr>
+<td style="text-align:left">20304703</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Li Y</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2010</td>
+<td style="text-align:left">Genetic variants and risk of lung cancer in never smokers: a genome-wide associa</td>
+</tr>
+<tr>
+<td style="text-align:left">21562939</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Yano T</td>
+<td style="text-align:left">Int J Clin Oncol</td>
+<td style="text-align:left">2011</td>
+<td style="text-align:left">Non-small cell lung cancer in never smokers as a representative 'non-smoking-ass</td>
+</tr>
+<tr>
+<td style="text-align:left">21933749</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Shaw AT</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2011</td>
+<td style="text-align:left">Effect of crizotinib on overall survival in patients with advanced non-small-cel</td>
+</tr>
+<tr>
+<td style="text-align:left">22330686</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Postel-Vinay S</td>
+<td style="text-align:left">Nat Rev Clin Oncol</td>
+<td style="text-align:left">2012</td>
+<td style="text-align:left">The potential of exploiting DNA-repair defects for optimizing lung cancer treatm</td>
+</tr>
+<tr>
+<td style="text-align:left">22334079</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Tanikawa C</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2012</td>
+<td style="text-align:left">Regulation of histone modification and chromatin structure by the p53-PADI4 path</td>
+</tr>
+<tr>
+<td style="text-align:left">22960745</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Cancer Genome Atlas Research Network</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2012</td>
+<td style="text-align:left">Comprehensive genomic characterization of squamous cell lung cancers.</td>
+</tr>
+<tr>
+<td style="text-align:left">22980976</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Govindan R</td>
+<td style="text-align:left">Cell</td>
+<td style="text-align:left">2012</td>
+<td style="text-align:left">Genomic landscape of non-small cell lung cancer in smokers and never-smokers.</td>
+</tr>
+<tr>
+<td style="text-align:left">23849838</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Raaschou-Nielsen O</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2013</td>
+<td style="text-align:left">Air pollution and lung cancer incidence in 17 European cohorts: prospective anal</td>
+</tr>
+<tr>
+<td style="text-align:left">24464287</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wang B</td>
+<td style="text-align:left">Nat Methods</td>
+<td style="text-align:left">2014</td>
+<td style="text-align:left">Similarity network fusion for aggregating data types on a genomic scale.</td>
+</tr>
+<tr>
+<td style="text-align:left">25079552</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Cancer Genome Atlas Research Network</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2014</td>
+<td style="text-align:left">Comprehensive molecular profiling of lung adenocarcinoma.</td>
+</tr>
+<tr>
+<td style="text-align:left">25456362</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Jänne PA</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2014</td>
+<td style="text-align:left">Dacomitinib as first-line treatment in patients with clinically or molecularly s</td>
+</tr>
+<tr>
+<td style="text-align:left">25533943</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Rosell R</td>
+<td style="text-align:left">Nat Rev Clin Oncol</td>
+<td style="text-align:left">2015</td>
+<td style="text-align:left">Lung cancer in 2014: optimizing lung cancer treatment approaches.</td>
+</tr>
+<tr>
+<td style="text-align:left">25765070</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Rizvi NA</td>
+<td style="text-align:left">Science</td>
+<td style="text-align:left">2015</td>
+<td style="text-align:left">Cancer immunology. Mutational landscape determines sensitivity to PD-1 blockade</td>
+</tr>
+<tr>
+<td style="text-align:left">25963091</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Thomas A</td>
+<td style="text-align:left">Nat Rev Clin Oncol</td>
+<td style="text-align:left">2015</td>
+<td style="text-align:left">Refining the treatment of NSCLC according to histological and molecular subtypes</td>
+</tr>
+<tr>
+<td style="text-align:left">26168399</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">George J</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2015</td>
+<td style="text-align:left">Comprehensive genomic profiles of small cell lung cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">27100819</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wood K</td>
+<td style="text-align:left">JAMA Oncol</td>
+<td style="text-align:left">2016</td>
+<td style="text-align:left">Prognostic and Predictive Value in KRAS in Non-Small-Cell Lung Cancer: A Review.</td>
+</tr>
+<tr>
+<td style="text-align:left">27686855</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Leung AW</td>
+<td style="text-align:left">Mol Cancer</td>
+<td style="text-align:left">2016</td>
+<td style="text-align:left">Synthetic lethality in lung cancer and translation to clinical therapies.</td>
+</tr>
+<tr>
+<td style="text-align:left">28052254</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Charoentong P</td>
+<td style="text-align:left">Cell Rep</td>
+<td style="text-align:left">2017</td>
+<td style="text-align:left">Pan-cancer Immunogenomic Analyses Reveal Genotype-Immunophenotype Relationships</td>
+</tr>
+<tr>
+<td style="text-align:left">28604730</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">McKay JD</td>
+<td style="text-align:left">Nat Genet</td>
+<td style="text-align:left">2017</td>
+<td style="text-align:left">Large-scale association analysis identifies new lung cancer susceptibility loci</td>
+</tr>
+<tr>
+<td style="text-align:left">29030587</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Ju J</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2017</td>
+<td style="text-align:left">NatD promotes lung cancer progression by preventing histone H4 serine phosphoryl</td>
+</tr>
+<tr>
+<td style="text-align:left">29628290</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Thorsson V</td>
+<td style="text-align:left">Immunity</td>
+<td style="text-align:left">2018</td>
+<td style="text-align:left">The Immune Landscape of Cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">29778737</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Conforti F</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2018</td>
+<td style="text-align:left">Cancer immunotherapy efficacy and patients' sex: a systematic review and meta-an</td>
+</tr>
+<tr>
+<td style="text-align:left">29988129</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Lambrechts D</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2018</td>
+<td style="text-align:left">Phenotype molding of stromal cells in the lung tumor microenvironment.</td>
+</tr>
+<tr>
+<td style="text-align:left">30224757</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Coudray N</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2018</td>
+<td style="text-align:left">Classification and mutation prediction from non-small cell lung cancer histopath</td>
+</tr>
+<tr>
+<td style="text-align:left">30926931</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Rudin CM</td>
+<td style="text-align:left">Nat Rev Cancer</td>
+<td style="text-align:left">2019</td>
+<td style="text-align:left">Molecular subtypes of small cell lung cancer: a synthesis of human and mouse mod</td>
+</tr>
+<tr>
+<td style="text-align:left">30979687</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Zilionis R</td>
+<td style="text-align:left">Immunity</td>
+<td style="text-align:left">2019</td>
+<td style="text-align:left">Single-Cell Transcriptomics of Human and Mouse Lung Cancers Reveals Conserved My</td>
+</tr>
+<tr>
+<td style="text-align:left">31220206</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Chauvel C</td>
+<td style="text-align:left">Brief Bioinform</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Evaluation of integrative clustering methods for the analysis of multi-omics dat</td>
+</tr>
+<tr>
+<td style="text-align:left">31406302</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Skoulidis F</td>
+<td style="text-align:left">Nat Rev Cancer</td>
+<td style="text-align:left">2019</td>
+<td style="text-align:left">Co-occurring genomic alterations in non-small-cell lung cancer biology and thera</td>
+</tr>
+<tr>
+<td style="text-align:left">31451693</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Li Z</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2019</td>
+<td style="text-align:left">Liquid biopsy-based single-cell metabolic phenotyping of lung cancer patients fo</td>
+</tr>
+<tr>
+<td style="text-align:left">31591589</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Courtiol P</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2019</td>
+<td style="text-align:left">Deep learning-based classification of mesothelioma improves prediction of patien</td>
+</tr>
+<tr>
+<td style="text-align:left">31792509</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Pierre-Jean M</td>
+<td style="text-align:left">Brief Bioinform</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Clustering and variable selection evaluation of 13 unsupervised methods for mult</td>
+</tr>
+<tr>
+<td style="text-align:left">32243837</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Alam H</td>
+<td style="text-align:left">Cancer Cell</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">KMT2D Deficiency Impairs Super-Enhancers to Confer a Glycolytic Vulnerability in</td>
+</tr>
+<tr>
+<td style="text-align:left">32269342</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Chabon JJ</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Integrating genomic features for non-invasive early lung cancer detection.</td>
+</tr>
+<tr>
+<td style="text-align:left">32271354</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Arrieta O</td>
+<td style="text-align:left">JAMA Oncol</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Efficacy and Safety of Pembrolizumab Plus Docetaxel vs Docetaxel Alone in Patien</td>
+</tr>
+<tr>
+<td style="text-align:left">32393329</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Argelaguet R</td>
+<td style="text-align:left">Genome Biol</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">MOFA+: a statistical framework for comprehensive integration of multi-modal sing</td>
+</tr>
+<tr>
+<td style="text-align:left">32649874</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Gillette MA</td>
+<td style="text-align:left">Cell</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Proteogenomic Characterization Reveals Therapeutic Vulnerabilities in Lung Adeno</td>
+</tr>
+<tr>
+<td style="text-align:left">32649875</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Chen YJ</td>
+<td style="text-align:left">Cell</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Proteogenomics of Non-smoking Lung Cancer in East Asia Delineates Molecular Sign</td>
+</tr>
+<tr>
+<td style="text-align:left">32649877</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Xu JY</td>
+<td style="text-align:left">Cell</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Integrative Proteomic Characterization of Human Lung Adenocarcinoma.</td>
+</tr>
+<tr>
+<td style="text-align:left">32822576</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Maynard A</td>
+<td style="text-align:left">Cell</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Seque</td>
+</tr>
+<tr>
+<td style="text-align:left">33009371</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Kato S</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">Real-world data from a molecular tumor board demonstrates improved outcomes with</td>
+</tr>
+<tr>
+<td style="text-align:left">33011388</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Baine MK</td>
+<td style="text-align:left">J Thorac Oncol</td>
+<td style="text-align:left">2020</td>
+<td style="text-align:left">SCLC Subtypes Defined by ASCL1, NEUROD1, POU2F3, and YAP1: A Comprehensive Immun</td>
+</tr>
+<tr>
+<td style="text-align:left">33536620</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Yuan G</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2021</td>
+<td style="text-align:left">Elevated NSD3 histone methylation activity drives squamous cell lung cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">33846331</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Weng RR</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2021</td>
+<td style="text-align:left">Epigenetic modulation of immune synaptic-cytoskeletal networks potentiates γδ T</td>
+</tr>
+<tr>
+<td style="text-align:left">34001877</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Li Z</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2021</td>
+<td style="text-align:left">Single-cell lipidomics with high structural specificity by mass spectrometry.</td>
+</tr>
+<tr>
+<td style="text-align:left">34019806</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Bagaev A</td>
+<td style="text-align:left">Cancer Cell</td>
+<td style="text-align:left">2021</td>
+<td style="text-align:left">Conserved pan-cancer microenvironment subtypes predict response to immunotherapy</td>
+</tr>
+<tr>
+<td style="text-align:left">34493867</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Zhang T</td>
+<td style="text-align:left">Nat Genet</td>
+<td style="text-align:left">2021</td>
+<td style="text-align:left">Genomic and evolutionary classification of lung cancer in never smokers.</td>
+</tr>
+<tr>
+<td style="text-align:left">34769372</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Vavalà T</td>
+<td style="text-align:left">Int J Mol Sci</td>
+<td style="text-align:left">2021</td>
+<td style="text-align:left">Gender Differences and Immunotherapy Outcome in Advanced Lung Cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">34870237</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Lehtiö J</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2021</td>
+<td style="text-align:left">Proteogenomics of non-small cell lung cancer reveals molecular subtypes associat</td>
+</tr>
+<tr>
+<td style="text-align:left">35105868</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Napoli M</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">ΔNp63 regulates a common landscape of enhancer associated genes in non-small cel</td>
+</tr>
+<tr>
+<td style="text-align:left">35108060</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wang G</td>
+<td style="text-align:left">Sci Transl Med</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">Lung cancer scRNA-seq and lipidomics reveal aberrant lipid metabolism for early-</td>
+</tr>
+<tr>
+<td style="text-align:left">35209919</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Kolesar J</td>
+<td style="text-align:left">Mol Cancer</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">Integration of liquid biopsy and pharmacogenomics for precision therapy of EGFR</td>
+</tr>
+<tr>
+<td style="text-align:left">35221333</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Tamborero D</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">The Molecular Tumor Board Portal supports clinical decisions and automated repor</td>
+</tr>
+<tr>
+<td style="text-align:left">35400597</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Madala S</td>
+<td style="text-align:left">Clin Oncol (R Coll Radiol)</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">Gender Differences and Their Effects on Survival Outcomes in Lung Cancer Patient</td>
+</tr>
+<tr>
+<td style="text-align:left">35449309</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Na F</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">KMT2C deficiency promotes small cell lung cancer metastasis through DNMT3A-media</td>
+</tr>
+<tr>
+<td style="text-align:left">35504910</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wielscher M</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">DNA methylation signature of chronic low-grade inflammation and its role in card</td>
+</tr>
+<tr>
+<td style="text-align:left">35676421</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">MotieGhader H</td>
+<td style="text-align:left">Sci Rep</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">Drug repositioning in non-small cell lung cancer (NSCLC) using gene co-expressio</td>
+</tr>
+<tr>
+<td style="text-align:left">35708671</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Ricciuti B</td>
+<td style="text-align:left">JAMA Oncol</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">Association of High Tumor Mutation Burden in Non-Small Cell Lung Cancers With In</td>
+</tr>
+<tr>
+<td style="text-align:left">35862035</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Xu J</td>
+<td style="text-align:left">JAMA Oncol</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">Evaluation of Clinical Outcomes of Icotinib in Patients With Clinically Diagnose</td>
+</tr>
+<tr>
+<td style="text-align:left">35944502</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Chen RJ</td>
+<td style="text-align:left">Cancer Cell</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">Pan-cancer integrative histology-genomic analysis via multimodal deep learning.</td>
+</tr>
+<tr>
+<td style="text-align:left">36045535</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Caliman E</td>
+<td style="text-align:left">Curr Cancer Drug Targets</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Gender Matters. Sex-related Differences in Immunotherapy Outcome in Patients wit</td>
+</tr>
+<tr>
+<td style="text-align:left">36323656</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Dolezal JM</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2022</td>
+<td style="text-align:left">Uncertainty-informed deep learning models enable high-confidence predictions for</td>
+</tr>
+<tr>
+<td style="text-align:left">36512628</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Long LL</td>
+<td style="text-align:left">Cancer Res</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">PARP Inhibition Induces Synthetic Lethality and Adaptive Immunity in LKB1-Mutant</td>
+</tr>
+<tr>
+<td style="text-align:left">36631610</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">de Vries NL</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">γδ T cells are effectors of immunotherapy in cancers with HLA class I defects.</td>
+</tr>
+<tr>
+<td style="text-align:left">36690875</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Lester DK</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Fucosylation of HLA-DRB1 regulates CD4(+) T cell-mediated anti-melanoma immunity</td>
+</tr>
+<tr>
+<td style="text-align:left">36720863</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Hanley CJ</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Single-cell analysis reveals prognostic fibroblast subpopulations linked to mole</td>
+</tr>
+<tr>
+<td style="text-align:left">36732634</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Migliozzi S</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Integrative multi-omics networks identify PKCδ and DNA-PK as master kinases of g</td>
+</tr>
+<tr>
+<td style="text-align:left">36806787</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Harada G</td>
+<td style="text-align:left">Nat Rev Clin Oncol</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Rare molecular subtypes of lung cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">36869384</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Hu J</td>
+<td style="text-align:left">Genome Med</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Tumor microenvironment remodeling after neoadjuvant immunotherapy in non-small c</td>
+</tr>
+<tr>
+<td style="text-align:left">36914893</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Stein-Thoeringer CK</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">A non-antibiotic-disrupted gut microbiome is associated with clinical responses</td>
+</tr>
+<tr>
+<td style="text-align:left">37046093</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Martínez-Ruiz C</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Genomic-transcriptomic evolution in lung cancer and metastasis.</td>
+</tr>
+<tr>
+<td style="text-align:left">37046096</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Frankell AM</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">The evolution of lung cancer and impact of subclonal selection in TRACERx.</td>
+</tr>
+<tr>
+<td style="text-align:left">37055640</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Abbosh C</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Tracking early lung cancer metastatic dissemination in TRACERx using ctDNA.</td>
+</tr>
+<tr>
+<td style="text-align:left">37068308</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Zhao Y</td>
+<td style="text-align:left">Brief Bioinform</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Decoding Connectivity Map-based drug repurposing for oncotherapy.</td>
+</tr>
+<tr>
+<td style="text-align:left">37127787</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Kraemer AI</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">The immunopeptidome landscape associated with T cell infiltration, inflammation</td>
+</tr>
+<tr>
+<td style="text-align:left">37248397</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Dutta R</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Understanding inequities in precision oncology diagnostics.</td>
+</tr>
+<tr>
+<td style="text-align:left">37380628</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Nair NU</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">A landscape of response to drug combinations in non-small cell lung cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">37541244</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">de Miguel FJ</td>
+<td style="text-align:left">Cancer Cell</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Mammalian SWI/SNF chromatin remodeling complexes promote tyrosine kinase inhibit</td>
+</tr>
+<tr>
+<td style="text-align:left">37651607</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Athaya T</td>
+<td style="text-align:left">Brief Bioinform</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Multimodal deep learning approaches for single-cell multi-omics data integration</td>
+</tr>
+<tr>
+<td style="text-align:left">37686122</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Hamouz M</td>
+<td style="text-align:left">Int J Mol Sci</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">A Functional Genomics Review of Non-Small-Cell Lung Cancer in Never Smokers.</td>
+</tr>
+<tr>
+<td style="text-align:left">37738976</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Ferrari V</td>
+<td style="text-align:left">Cancer Cell</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Sensitizing cancer cells to immune checkpoint inhibitors by microbiota-mediated</td>
+</tr>
+<tr>
+<td style="text-align:left">37774698</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Zhu M</td>
+<td style="text-align:left">Cancer Cell</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Loss of p53 and mutational heterogeneity drives immune resistance in an autochth</td>
+</tr>
+<tr>
+<td style="text-align:left">37845306</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Tsimberidou AM</td>
+<td style="text-align:left">Nat Rev Clin Oncol</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Molecular tumour boards - current and future considerations for precision oncolo</td>
+</tr>
+<tr>
+<td style="text-align:left">37953380</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Cannon M</td>
+<td style="text-align:left">Nucleic Acids Res</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">DGIdb 5.0: rebuilding the drug-gene interaction database for precision medicine</td>
+</tr>
+<tr>
+<td style="text-align:left">38001063</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Huizing GJ</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">Paired single-cell multi-omics data integration with Mowgli.</td>
+</tr>
+<tr>
+<td style="text-align:left">38181741</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Liu Q</td>
+<td style="text-align:left">Cell</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Proteogenomic characterization of small cell lung cancer identifies biological i</td>
+</tr>
+<tr>
+<td style="text-align:left">38278149</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Heeke S</td>
+<td style="text-align:left">Cancer Cell</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Tumor- and circulating-free DNA methylation identifies clinically relevant small</td>
+</tr>
+<tr>
+<td style="text-align:left">38351187</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Besse B</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Biomarker-directed targeted therapy plus durvalumab in advanced non-small-cell l</td>
+</tr>
+<tr>
+<td style="text-align:left">38607364</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Park SJ</td>
+<td style="text-align:left">Cancer Res</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Proteogenomic Characterization Reveals Estrogen Signaling as a Target for Never-</td>
+</tr>
+<tr>
+<td style="text-align:left">38782901</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">De Zuani M</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Single-cell and spatial transcriptomics analysis of non-small cell lung cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">38793821</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Kholopo M</td>
+<td style="text-align:left">Sensors (Basel)</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Radon Exposure Assessment in Occupational and Environmental Settings: An Overvie</td>
+</tr>
+<tr>
+<td style="text-align:left">39121882</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Meyer ML</td>
+<td style="text-align:left">Lancet</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">New promises and challenges in the treatment of advanced non-small-cell lung can</td>
+</tr>
+<tr>
+<td style="text-align:left">39232164</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wang X</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">A pathology foundation model for cancer diagnosis and prognosis prediction.</td>
+</tr>
+<tr>
+<td style="text-align:left">39322753</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Hu Y</td>
+<td style="text-align:left">Nat Methods</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Benchmarking algorithms for single-cell multi-omics prediction and integration.</td>
+</tr>
+<tr>
+<td style="text-align:left">39379704</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Zuccato JA</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Prediction of brain metastasis development with DNA methylation signatures.</td>
+</tr>
+<tr>
+<td style="text-align:left">39481415</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Bakas S</td>
+<td style="text-align:left">Lancet Oncol</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Artificial Intelligence for Response Assessment in Neuro Oncology (AI-RANO), par</td>
+</tr>
+<tr>
+<td style="text-align:left">39557933</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Li S</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">An umbrella review of socioeconomic status and cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">39580524</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Song KJ</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Proteogenomic analysis reveals non-small cell lung cancer subtypes predicting ch</td>
+</tr>
+<tr>
+<td style="text-align:left">39613742</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Li Q</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">A dendritic cell vaccine for both vaccination and neoantigen-reactive T cell pre</td>
+</tr>
+<tr>
+<td style="text-align:left">39669580</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Zhang Y</td>
+<td style="text-align:left">Front Immunol</td>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">Multi-omics characterization and machine learning of lung adenocarcinoma molecul</td>
+</tr>
+<tr>
+<td style="text-align:left">39724105</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Rakaee M</td>
+<td style="text-align:left">JAMA Oncol</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Deep Learning Model for Predicting Immunotherapy Response in Advanced Non-Small</td>
+</tr>
+<tr>
+<td style="text-align:left">39762577</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wang Y</td>
+<td style="text-align:left">Nat Rev Clin Oncol</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Immunotherapy for advanced-stage squamous cell lung cancer: the state of the art</td>
+</tr>
+<tr>
+<td style="text-align:left">39786754</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Arora K</td>
+<td style="text-align:left">JAMA Oncol</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Genetic Ancestry-Based Differences in Biomarker-Based Eligibility for Precision</td>
+</tr>
+<tr>
+<td style="text-align:left">39904223</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Hofman P</td>
+<td style="text-align:left">Lung Cancer</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Proposal of real-world solutions for the implementation of predictive biomarker</td>
+</tr>
+<tr>
+<td style="text-align:left">39929832</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wang C</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Multi-omics analyses reveal biological and clinical insights in recurrent stage</td>
+</tr>
+<tr>
+<td style="text-align:left">39983726</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Chen H</td>
+<td style="text-align:left">Cancer Cell</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Integrative spatial analysis reveals tumor heterogeneity and immune colony niche</td>
+</tr>
+<tr>
+<td style="text-align:left">40009905</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Thaker R</td>
+<td style="text-align:left">Pathol Res Pract</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Estrogen receptor subtypes and survival outcomes in non-small cell lung cancer.</td>
+</tr>
+<tr>
+<td style="text-align:left">40016452</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Tagore S</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Single-cell and spatial genomic landscape of non-small cell lung cancer brain me</td>
+</tr>
+<tr>
+<td style="text-align:left">40064883</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Yang Z</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">A foundation model for generalizable cancer diagnosis and survival prediction fr</td>
+</tr>
+<tr>
+<td style="text-align:left">40069142</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Su H</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Proteogenomic characterization reveals tumorigenesis and progression of lung can</td>
+</tr>
+<tr>
+<td style="text-align:left">40102635</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Tanoli Z</td>
+<td style="text-align:left">Nat Rev Drug Discov</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Computational drug repurposing: approaches, evaluation of in silico resources an</td>
+</tr>
+<tr>
+<td style="text-align:left">40147443</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Liu Z</td>
+<td style="text-align:left">Cell</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">A single-cell atlas reveals immune heterogeneity in anti-PD-1-treated non-small</td>
+</tr>
+<tr>
+<td style="text-align:left">40211981</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wang L</td>
+<td style="text-align:left">Brief Bioinform</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">FactVAE: a factorized variational autoencoder for single-cell multi-omics data i</td>
+</tr>
+<tr>
+<td style="text-align:left">40307487</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Fukushima T</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">An organoid library unveils subtype-specific IGF-1 dependency via a YAP-AP1 axis</td>
+</tr>
+<tr>
+<td style="text-align:left">40341231</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wang C</td>
+<td style="text-align:left">Nat Cancer</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Impaired T cell and neoantigen retention in time-serial analysis of metastatic n</td>
+</tr>
+<tr>
+<td style="text-align:left">40437272</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Skoulidis F</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Molecular determinants of sotorasib clinical efficacy in KRAS(G12C)-mutated non-</td>
+</tr>
+<tr>
+<td style="text-align:left">40512546</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Huang S</td>
+<td style="text-align:left">Nucleic Acids Res</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Super-enhancer-mediated circRNAs exhibit high splicing circularization diversity</td>
+</tr>
+<tr>
+<td style="text-align:left">40515391</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Wang Y</td>
+<td style="text-align:left">Brief Bioinform</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Gene Swin transformer: new deep learning method for colorectal cancer prognosis</td>
+</tr>
+<tr>
+<td style="text-align:left">40604281</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Díaz-Gay M</td>
+<td style="text-align:left">Nature</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">The mutagenic forces shaping the genomes of lung cancer in never smokers.</td>
+</tr>
+<tr>
+<td style="text-align:left">40748323</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Baião AR</td>
+<td style="text-align:left">Brief Bioinform</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">A technical review of multi-omics data integration methods: from classical stati</td>
+</tr>
+<tr>
+<td style="text-align:left">40940333</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Uyar B</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Flexynesis: A deep learning toolkit for bulk multi-omics data integration for pr</td>
+</tr>
+<tr>
+<td style="text-align:left">40950280</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Hong Y</td>
+<td style="text-align:left">Am J Transl Res</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Meta-analysis of the association between indoor environmental pollution and lung</td>
+</tr>
+<tr>
+<td style="text-align:left">41006245</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Ozirmak Lermi N</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Comparison of imaging based single-cell resolution spatial transcriptomics profi</td>
+</tr>
+<tr>
+<td style="text-align:left">41073787</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Aung TN</td>
+<td style="text-align:left">Nat Genet</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Spatial signatures for predicting immunotherapy outcomes using multi-omics in no</td>
+</tr>
+<tr>
+<td style="text-align:left">41083898</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Liu C</td>
+<td style="text-align:left">Nat Methods</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Multitask benchmarking of single-cell multimodal omics integration methods.</td>
+</tr>
+<tr>
+<td style="text-align:left">41114991</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Murphy C</td>
+<td style="text-align:left">JAMA</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Lung Cancer in Nonsmoking Individuals: A Review.</td>
+</tr>
+<tr>
+<td style="text-align:left">41205598</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Black JRM</td>
+<td style="text-align:left">Cell</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Longitudinal ultrasensitive ctDNA monitoring for high-resolution lung cancer ris</td>
+</tr>
+<tr>
+<td style="text-align:left">41387456</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">McElderry JP</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Microbiome analysis of 940 lung cancers in never-smokers reveals lack of clinica</td>
+</tr>
+<tr>
+<td style="text-align:left">41398162</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Zeng L</td>
+<td style="text-align:left">Nat Commun</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">PD-1/ PD-L1 bispecific antibody IBI318 combined with lenvatinib in advanced non-</td>
+</tr>
+<tr>
+<td style="text-align:left">41463234</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Arshad MF</td>
+<td style="text-align:left">Cancers (Basel)</td>
+<td style="text-align:left">2025</td>
+<td style="text-align:left">Artificial Intelligence and Machine Learning in Lung Cancer: Advances in Imaging</td>
+</tr>
+<tr>
+<td style="text-align:left">41478861</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Reardon B</td>
+<td style="text-align:left">Nat Rev Cancer</td>
+<td style="text-align:left">2026</td>
+<td style="text-align:left">Convergence of machine learning and genomics for precision oncology.</td>
+</tr>
+<tr>
+<td style="text-align:left">41481196</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Thiesen AH</td>
+<td style="text-align:left">Cancer Res</td>
+<td style="text-align:left">2026</td>
+<td style="text-align:left">Multicenter Histology Image Integration and Multiscale Deep Learning Support Mac</td>
+</tr>
+<tr>
+<td style="text-align:left">41491099</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Li Z</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2026</td>
+<td style="text-align:left">AI-enabled virtual spatial proteomics from histopathology for interpretable biom</td>
+</tr>
+<tr>
+<td style="text-align:left">41495408</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Saito Y</td>
+<td style="text-align:left">Nat Med</td>
+<td style="text-align:left">2026</td>
+<td style="text-align:left">Real-world clinical utility of comprehensive genomic profiling in advanced solid</td>
+</tr>
+<tr>
+<td style="text-align:left">41554048</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Lin CP</td>
+<td style="text-align:left">Brief Bioinform</td>
+<td style="text-align:left">2026</td>
+<td style="text-align:left">MoAGNN: a multi-omics hierarchical graph neural network for subtype classificati</td>
+</tr>
+<tr>
+<td style="text-align:left">6325913</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Radford EP</td>
+<td style="text-align:left">N Engl J Med</td>
+<td style="text-align:left">1984</td>
+<td style="text-align:left">Lung cancer in Swedish iron miners exposed to low doses of radon daughters.</td>
+</tr>
+<tr>
+<td style="text-align:left">8096265</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Tomásek L</td>
+<td style="text-align:left">Lancet</td>
+<td style="text-align:left">1993</td>
+<td style="text-align:left">Radon exposure and cancers other than lung cancer among uranium miners in West B</td>
+</tr>
+<tr>
+<td style="text-align:left">8196118</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Fontham ET</td>
+<td style="text-align:left">JAMA</td>
+<td style="text-align:left">1994</td>
+<td style="text-align:left">Environmental tobacco smoke and lung cancer in nonsmoking women. A multicenter s</td>
+</tr>
+<tr>
+<td style="text-align:left">8264737</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Pershagen G</td>
+<td style="text-align:left">N Engl J Med</td>
+<td style="text-align:left">1994</td>
+<td style="text-align:left">Residential radon exposure and lung cancer in Sweden.</td>
+</tr>
+<tr>
+<td style="text-align:left">9603793</td>
+<td style="text-align:center">VALID</td>
+<td style="text-align:left">Camus M</td>
+<td style="text-align:left">N Engl J Med</td>
+<td style="text-align:left">1998</td>
+<td style="text-align:left">Nonoccupational exposure to chrysotile asbestos and the risk of lung cancer.</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-4-the-library/file-guide.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: File Guide and Access">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PMID Verification Report","level":"6.1","depth":1,"previous":{"title":"File Guide and Access","level":"5.1","depth":1,"path":"part-4-the-library/file-guide.md","ref":"part-4-the-library/file-guide.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing"],"root":"./docs","styles":{"website":"styles/custom.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Vignesh Ravichandran","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Lung Cancer Multi-Omics & AI/ML Literature Review","language":"en","gitbook":"*","description":"A systematic literature intelligence report: 66,879 papers across 12 themes covering multi-omics integration and AI/ML in lung cancer"},"file":{"path":"pmid-verification-report.md","mtime":"2026-04-18T18:16:22.555Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-04-18T18:37:24.609Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,234 @@
+/* ============================================
+   Lung Cancer Multi-Omics Review — Custom Theme
+   Rich, colorful, scientific
+   ============================================ */
+
+/* --- Base colors --- */
+:root {
+  --primary: #1a6b8a;
+  --primary-light: #2d9cc3;
+  --accent-coral: #e8655a;
+  --accent-gold: #d4a843;
+  --accent-teal: #2ba5a5;
+  --accent-purple: #7b68ae;
+  --accent-green: #4caf7d;
+  --bg-light: #fafbfd;
+  --bg-callout: #f0f7fb;
+  --text-main: #2c3e50;
+  --border-subtle: #dce4ec;
+}
+
+/* --- Page body --- */
+.book .book-body .page-wrapper .page-inner {
+  max-width: 900px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-main);
+  line-height: 1.75;
+}
+
+/* --- Headings --- */
+h1 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--accent-coral);
+  padding-bottom: 12px;
+  font-size: 2.2em;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: var(--primary-light);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 8px;
+  margin-top: 2.5em;
+  font-size: 1.6em;
+}
+
+h3 {
+  color: var(--accent-teal);
+  font-size: 1.3em;
+  margin-top: 2em;
+}
+
+h4 {
+  color: var(--accent-purple);
+  font-size: 1.1em;
+}
+
+/* --- Blockquotes (callouts) --- */
+blockquote {
+  border-left: 5px solid var(--accent-coral);
+  background: linear-gradient(135deg, #fef5f4 0%, #fdf0ee 100%);
+  padding: 16px 24px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #4a3333;
+  box-shadow: 0 2px 8px rgba(232, 101, 90, 0.08);
+}
+
+blockquote strong {
+  color: var(--accent-coral);
+  font-style: normal;
+}
+
+/* Alternating callout styles for variety */
+blockquote + blockquote {
+  border-left-color: var(--accent-teal);
+  background: linear-gradient(135deg, #f0fafa 0%, #e8f6f6 100%);
+  color: #2a4444;
+}
+
+blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-gold);
+  background: linear-gradient(135deg, #fdf8ed 0%, #faf3e0 100%);
+  color: #4a3f22;
+}
+
+blockquote + blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-purple);
+  background: linear-gradient(135deg, #f5f2fa 0%, #ede8f5 100%);
+  color: #3d2d5c;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+table thead tr {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+}
+
+table thead th {
+  padding: 12px 16px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:hover {
+  background-color: #e8f4f8;
+  transition: background-color 0.2s ease;
+}
+
+table tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table tbody td strong {
+  color: var(--primary);
+}
+
+/* --- Links --- */
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--primary-light);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-coral);
+  border-bottom-color: var(--accent-coral);
+}
+
+/* --- Code blocks --- */
+pre {
+  background: linear-gradient(180deg, #1e2d3d 0%, #253443 100%);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #364958;
+}
+
+code {
+  background-color: #eef3f8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  color: var(--accent-coral);
+}
+
+pre code {
+  background: none;
+  color: #d4dce4;
+  padding: 0;
+}
+
+/* --- Horizontal rules --- */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent-coral), var(--accent-gold), var(--accent-teal), var(--accent-purple));
+  margin: 40px 0;
+  border-radius: 2px;
+}
+
+/* --- Images (infographics) --- */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
+  border: 2px solid var(--border-subtle);
+}
+
+/* --- Sidebar navigation --- */
+.book .book-summary {
+  background: linear-gradient(180deg, #1a2332 0%, #1e2d3d 100%);
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: #b8c9d9;
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: white;
+  background: rgba(45, 156, 195, 0.2);
+  border-left: 3px solid var(--accent-coral);
+}
+
+.book .book-summary ul.summary li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Bold PASS/STRONG/etc in tables --- */
+td:last-child {
+  font-weight: 500;
+}
+
+/* --- Special markers --- */
+em {
+  color: #5a6b7d;
+}
+
+/* --- Infographic captions --- */
+p > em:only-child {
+  display: block;
+  text-align: center;
+  color: #7a8b9d;
+  font-size: 0.9em;
+  margin-top: -12px;
+}

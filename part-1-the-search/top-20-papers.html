@@ -1,0 +1,990 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>The 20 Papers That Define the Field · Lung Cancer Multi-Omics & AI/ML Literature Review</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="author" content="Vignesh Ravichandran">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../part-2-the-landscape/01-molecular-heterogeneity.html" />
+    
+    
+    <link rel="prev" href="themes-at-a-glance.html" />
+    
+
+    <style>
+/* ============================================
+   Lung Cancer Multi-Omics Review — Custom Theme
+   Rich, colorful, scientific
+   ============================================ */
+
+/* --- Base colors --- */
+:root {
+  --primary: #1a6b8a;
+  --primary-light: #2d9cc3;
+  --accent-coral: #e8655a;
+  --accent-gold: #d4a843;
+  --accent-teal: #2ba5a5;
+  --accent-purple: #7b68ae;
+  --accent-green: #4caf7d;
+  --bg-light: #fafbfd;
+  --bg-callout: #f0f7fb;
+  --text-main: #2c3e50;
+  --border-subtle: #dce4ec;
+}
+
+/* --- Page body --- */
+.book .book-body .page-wrapper .page-inner {
+  max-width: 900px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-main);
+  line-height: 1.75;
+}
+
+/* --- Headings --- */
+h1 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--accent-coral);
+  padding-bottom: 12px;
+  font-size: 2.2em;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: var(--primary-light);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 8px;
+  margin-top: 2.5em;
+  font-size: 1.6em;
+}
+
+h3 {
+  color: var(--accent-teal);
+  font-size: 1.3em;
+  margin-top: 2em;
+}
+
+h4 {
+  color: var(--accent-purple);
+  font-size: 1.1em;
+}
+
+/* --- Blockquotes (callouts) --- */
+blockquote {
+  border-left: 5px solid var(--accent-coral);
+  background: linear-gradient(135deg, #fef5f4 0%, #fdf0ee 100%);
+  padding: 16px 24px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #4a3333;
+  box-shadow: 0 2px 8px rgba(232, 101, 90, 0.08);
+}
+
+blockquote strong {
+  color: var(--accent-coral);
+  font-style: normal;
+}
+
+/* Alternating callout styles for variety */
+blockquote + blockquote {
+  border-left-color: var(--accent-teal);
+  background: linear-gradient(135deg, #f0fafa 0%, #e8f6f6 100%);
+  color: #2a4444;
+}
+
+blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-gold);
+  background: linear-gradient(135deg, #fdf8ed 0%, #faf3e0 100%);
+  color: #4a3f22;
+}
+
+blockquote + blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-purple);
+  background: linear-gradient(135deg, #f5f2fa 0%, #ede8f5 100%);
+  color: #3d2d5c;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+table thead tr {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+}
+
+table thead th {
+  padding: 12px 16px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:hover {
+  background-color: #e8f4f8;
+  transition: background-color 0.2s ease;
+}
+
+table tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table tbody td strong {
+  color: var(--primary);
+}
+
+/* --- Links --- */
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--primary-light);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-coral);
+  border-bottom-color: var(--accent-coral);
+}
+
+/* --- Code blocks --- */
+pre {
+  background: linear-gradient(180deg, #1e2d3d 0%, #253443 100%);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #364958;
+}
+
+code {
+  background-color: #eef3f8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  color: var(--accent-coral);
+}
+
+pre code {
+  background: none;
+  color: #d4dce4;
+  padding: 0;
+}
+
+/* --- Horizontal rules --- */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent-coral), var(--accent-gold), var(--accent-teal), var(--accent-purple));
+  margin: 40px 0;
+  border-radius: 2px;
+}
+
+/* --- Images (infographics) --- */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
+  border: 2px solid var(--border-subtle);
+}
+
+/* --- Sidebar navigation --- */
+.book .book-summary {
+  background: linear-gradient(180deg, #1a2332 0%, #1e2d3d 100%);
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: #b8c9d9;
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: white;
+  background: rgba(45, 156, 195, 0.2);
+  border-left: 3px solid var(--accent-coral);
+}
+
+.book .book-summary ul.summary li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Bold PASS/STRONG/etc in tables --- */
+td:last-child {
+  font-weight: 500;
+}
+
+/* --- Special markers --- */
+em {
+  color: #5a6b7d;
+}
+
+/* --- Infographic captions --- */
+p > em:only-child {
+  display: block;
+  text-align: center;
+  color: #7a8b9d;
+  font-size: 0.9em;
+  margin-top: -12px;
+}
+
+</style>
+</head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I: The Search</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="scale-and-methodology.html">
+            
+                <a href="scale-and-methodology.html">
+            
+                    
+                    Scale and Methodology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="themes-at-a-glance.html">
+            
+                <a href="themes-at-a-glance.html">
+            
+                    
+                    The Twelve Themes at a Glance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="top-20-papers.html">
+            
+                <a href="top-20-papers.html">
+            
+                    
+                    The 20 Papers That Define the Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part II: The Landscape</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../part-2-the-landscape/01-molecular-heterogeneity.html">
+            
+                <a href="../part-2-the-landscape/01-molecular-heterogeneity.html">
+            
+                    
+                    01 -- Molecular Heterogeneity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../part-2-the-landscape/02-multi-omics-methods.html">
+            
+                <a href="../part-2-the-landscape/02-multi-omics-methods.html">
+            
+                    
+                    02 -- Multi-Omics Integration Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../part-2-the-landscape/03-multi-omics-applications.html">
+            
+                <a href="../part-2-the-landscape/03-multi-omics-applications.html">
+            
+                    
+                    03 -- Multi-Omics Applications in Lung Cancer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../part-2-the-landscape/04-ai-ml.html">
+            
+                <a href="../part-2-the-landscape/04-ai-ml.html">
+            
+                    
+                    04 -- AI/ML in Lung Cancer and Oncology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../part-2-the-landscape/05-sex-gender.html">
+            
+                <a href="../part-2-the-landscape/05-sex-gender.html">
+            
+                    
+                    05 -- Sex and Gender Differences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../part-2-the-landscape/06-never-smoker.html">
+            
+                <a href="../part-2-the-landscape/06-never-smoker.html">
+            
+                    
+                    06 -- Never-Smoker Lung Cancer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../part-2-the-landscape/07-environmental.html">
+            
+                <a href="../part-2-the-landscape/07-environmental.html">
+            
+                    
+                    07 -- Environmental Exposures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../part-2-the-landscape/08-epigenetics.html">
+            
+                <a href="../part-2-the-landscape/08-epigenetics.html">
+            
+                    
+                    08 -- Epigenetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../part-2-the-landscape/09-immune-biomarkers.html">
+            
+                <a href="../part-2-the-landscape/09-immune-biomarkers.html">
+            
+                    
+                    09 -- Immune Biomarkers and Immunotherapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../part-2-the-landscape/10-translational.html">
+            
+                <a href="../part-2-the-landscape/10-translational.html">
+            
+                    
+                    10 -- Translational Bottleneck and Real-World Outcomes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../part-2-the-landscape/11-drug-repurposing.html">
+            
+                <a href="../part-2-the-landscape/11-drug-repurposing.html">
+            
+                    
+                    11 -- Drug Repurposing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../part-2-the-landscape/12-emerging-frontiers.html">
+            
+                <a href="../part-2-the-landscape/12-emerging-frontiers.html">
+            
+                    
+                    12 -- Emerging Frontiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../part-2-the-landscape/13-feature-selection.html">
+            
+                <a href="../part-2-the-landscape/13-feature-selection.html">
+            
+                    
+                    13 -- The Feature Selection Problem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part III: The Gaps</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../part-3-the-gaps/critical-gaps.html">
+            
+                <a href="../part-3-the-gaps/critical-gaps.html">
+            
+                    
+                    Critical Gaps Across All Themes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../part-3-the-gaps/surprising-findings.html">
+            
+                <a href="../part-3-the-gaps/surprising-findings.html">
+            
+                    
+                    Surprising Findings and Writing Recommendations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part IV: The Library</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../part-4-the-library/file-guide.html">
+            
+                <a href="../part-4-the-library/file-guide.html">
+            
+                    
+                    File Guide and Access
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Appendix</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../pmid-verification-report.html">
+            
+                <a href="../pmid-verification-report.html">
+            
+                    
+                    PMID Verification Report
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >The 20 Papers That Define the Field</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="the-20-papers-that-define-the-field">The 20 Papers That Define the Field</h1>
+<p>These studies form the structural backbone of the review. Each scored a perfect 1.00 in our relevance pipeline. They are not merely highly cited -- they are the papers that established the concepts, classifications, and paradigms that every other study in this collection builds upon or responds to.</p>
+<p>If the final manuscript cites only 20 references, these are the 20.</p>
+<hr></hr>
+<h2 id="genomic-foundations">Genomic Foundations</h2>
+<p>These five studies established the molecular taxonomy of lung cancer that the entire field now operates within.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:left">Citation</th>
+<th style="text-align:center">Journal</th>
+<th style="text-align:left">Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/25079552/" target="_blank"><strong>TCGA Network, 2014</strong></a> -- Comprehensive molecular profiling of lung adenocarcinoma</td>
+<td style="text-align:center"><em>Nature</em></td>
+<td style="text-align:left">The definitive LUAD molecular atlas. Integrated mRNA, miRNA, methylation, protein, and somatic mutation data from 230 resected tumors. Established EGFR, KRAS, and ALK as the principal actionable drivers. 5,053 citations. Every subsequent LUAD multi-omics study references this work.</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/22960745/" target="_blank"><strong>TCGA Network, 2012</strong></a> -- Comprehensive genomic characterization of squamous cell lung cancers</td>
+<td style="text-align:center"><em>Nature</em></td>
+<td style="text-align:left">Proved that LUSC is a fundamentally different molecular disease from LUAD, with a distinct spectrum of TP53 mutations, FGFR1/SOX2 amplifications, and CDKN2A inactivation. 3,734 citations. Ended the era of treating all NSCLC as one disease.</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/26168399/" target="_blank"><strong>George et al., 2015</strong></a> -- Comprehensive genomic profiles of small cell lung cancer</td>
+<td style="text-align:center"><em>Nature</em></td>
+<td style="text-align:left">First large-scale SCLC genomics. Revealed near-universal TP53/RB1 biallelic inactivation and recurrent alterations in NOTCH, MYC family, and chromatin remodelers. 1,990 citations. Set the foundation for the molecular subtyping that followed.</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/30926931/" target="_blank"><strong>Rudin et al., 2019</strong></a> -- Molecular subtypes of small cell lung cancer: a synthesis</td>
+<td style="text-align:center"><em>Nat Rev Cancer</em></td>
+<td style="text-align:left">Proposed the ASCL1/NEUROD1/POU2F3/YAP1 transcription factor taxonomy for SCLC that has become the standard classification. Each subtype has distinct biology and therapeutic vulnerabilities. Changed how SCLC clinical trials are designed.</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/31406302/" target="_blank"><strong>Skoulidis &amp; Heymach, 2019</strong></a> -- Co-occurring genomic alterations in NSCLC</td>
+<td style="text-align:center"><em>Nat Rev Cancer</em></td>
+<td style="text-align:left">Demonstrated that co-mutations -- especially KRAS/STK11 and KRAS/KEAP1 -- define biologically and clinically distinct NSCLC subgroups. Showed that co-alteration context determines immunotherapy sensitivity.</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="the-proteogenomics-revolution">The Proteogenomics Revolution</h2>
+<p>Three <em>Cell</em> papers published on the same day in July 2020, plus a 2024 follow-up, established that proteins tell a fundamentally different story than genes.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:left">Citation</th>
+<th style="text-align:center">Journal</th>
+<th style="text-align:left">Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/32649874/" target="_blank"><strong>Gillette et al., 2020</strong></a> -- CPTAC LUAD proteogenomic characterization</td>
+<td style="text-align:center"><em>Cell</em></td>
+<td style="text-align:left">The CPTAC flagship. Integrated genomic, proteomic, and phosphoproteomic profiling of LUAD. Identified druggable kinase activities completely invisible to DNA sequencing. 621 citations. Proved that multi-omics is not a luxury -- it reveals actionable biology that genomics alone misses.</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/32649875/" target="_blank"><strong>Chen et al., 2020</strong></a> -- East Asia non-smoking LUAD proteogenomics</td>
+<td style="text-align:center"><em>Cell</em></td>
+<td style="text-align:left">Mapped the proteogenomic landscape of the population with the highest never-smoker LUAD burden globally. Revealed unique EGFR-pathway rewiring patterns and population-specific therapeutic opportunities.</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/32649877/" target="_blank"><strong>Xu et al., 2020</strong></a> -- Integrative proteomic characterization of human LUAD</td>
+<td style="text-align:center"><em>Cell</em></td>
+<td style="text-align:left">Delineated proteomic subtypes with distinct immune infiltration patterns and metabolic features. 471 citations. Showed that proteomic subtypes crosscut but do not perfectly align with genomic subtypes -- the layers tell complementary stories.</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/38181741/" target="_blank"><strong>Liu et al., 2024</strong></a> -- SCLC proteogenomic characterization</td>
+<td style="text-align:center"><em>Cell</em></td>
+<td style="text-align:left">Extended the proteogenomic paradigm to SCLC. Identified subtype-specific phosphoproteomic signatures and candidate drug targets that genomic profiling had missed. The most recent anchor in this category.</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/33011388/" target="_blank"><strong>Baine et al., 2020</strong></a> -- SCLC subtypes by ASCL1, NEUROD1, POU2F3, YAP1</td>
+<td style="text-align:center"><em>JTO</em></td>
+<td style="text-align:left">Clinical validation that the Rudin transcription factor taxonomy can be implemented via immunohistochemistry on routine clinical specimens. Bridged SCLC molecular biology to pathology practice.</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="aiml-and-computational-oncology">AI/ML and Computational Oncology</h2>
+<p>The papers that proved machines can read biology from tissue and data.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:left">Citation</th>
+<th style="text-align:center">Journal</th>
+<th style="text-align:left">Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/30224757/" target="_blank"><strong>Coudray et al., 2018</strong></a> -- NSCLC classification and mutation prediction from histopathology via deep learning</td>
+<td style="text-align:center"><em>Nat Med</em></td>
+<td style="text-align:left">The study that launched computational pathology in lung cancer. Demonstrated that a CNN could classify LUAD vs. LUSC at pathologist-level accuracy AND predict STK11, EGFR, and TP53 mutations directly from H&amp;E-stained tissue. 2,407 citations. Established the paradigm that histopathology images encode molecular information decodable by computation.</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/35944502/" target="_blank"><strong>Chen et al., 2022</strong></a> -- Pan-cancer integrative histology-genomic analysis via multimodal deep learning</td>
+<td style="text-align:center"><em>Cancer Cell</em></td>
+<td style="text-align:left">Extended histopathology AI to multi-modal integration, fusing histology images with genomic data. Showed that multi-modal deep learning outperforms either modality alone for survival prediction across cancer types. 500 citations.</td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/32393329/" target="_blank"><strong>Argelaguet et al., 2020</strong></a> -- MOFA+: multi-omics factor analysis framework</td>
+<td style="text-align:center"><em>Genome Biol</em></td>
+<td style="text-align:left">The standard tool for Bayesian multi-omics integration. Handles missing data, batch effects, and single-cell resolution. 736 citations. Widely adopted in both pan-cancer and lung cancer multi-omics studies.</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="population-specific-biology">Population-Specific Biology</h2>
+<p>The studies that proved lung cancer biology differs by sex, smoking status, ancestry, and environment.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:left">Citation</th>
+<th style="text-align:center">Journal</th>
+<th style="text-align:left">Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/34493867/" target="_blank"><strong>Zhang et al., 2021</strong></a> -- Genomic and evolutionary classification of lung cancer in never-smokers</td>
+<td style="text-align:center"><em>Nat Genet</em></td>
+<td style="text-align:left">Defined the piano/mezzo/forte molecular subtypes of never-smoker LUAD. Proved that never-smoker lung cancer is not one disease but a family of genomically defined entities with distinct evolutionary trajectories and clinical behaviors. The single most important paper for the review's thesis.</td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/37046093/" target="_blank"><strong>Martinez-Ruiz et al., 2023</strong></a> -- Genomic-transcriptomic evolution in lung cancer and metastasis</td>
+<td style="text-align:center"><em>Nature</em></td>
+<td style="text-align:left">Paradigm-shifting evidence that PM2.5 promotes EGFR-driven LUAD in never-smokers through inflammatory IL-1-beta signaling that expands pre-existing EGFR-mutant clones -- rather than causing new mutations. Rewrites the environmental carcinogenesis model.</td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/29778737/" target="_blank"><strong>Conforti et al., 2018</strong></a> -- Sex and immunotherapy efficacy meta-analysis</td>
+<td style="text-align:center"><em>Lancet Oncol</em></td>
+<td style="text-align:left">The study that ignited the sex-stratified immunotherapy debate. Meta-analysis across tumor types showing greater anti-PD-1/PD-L1 benefit in men than women. 747 citations. Subsequent studies have been inconsistent, making this a live controversy.</td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/32015526/" target="_blank"><strong>Chen et al., 2020</strong></a> -- East Asian LUAD genomic landscape</td>
+<td style="text-align:center"><em>Nat Genet</em></td>
+<td style="text-align:left">Mapped ancestry-specific genomic architecture of lung adenocarcinoma. Demonstrated that the driver mutation spectrum, mutational signatures, and clonal evolution patterns differ between East Asian and European-ancestry LUAD.</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="immuno-oncology">Immuno-Oncology</h2>
+<p>The papers that built the biomarker framework for checkpoint immunotherapy.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:left">Citation</th>
+<th style="text-align:center">Journal</th>
+<th style="text-align:left">Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/25765070/" target="_blank"><strong>Rizvi et al., 2015</strong></a> -- Mutational landscape determines sensitivity to PD-1 blockade in NSCLC</td>
+<td style="text-align:center"><em>Science</em></td>
+<td style="text-align:left">Established tumor mutational burden (TMB) as a genomic biomarker for immunotherapy response. The paper that linked neoantigen load to PD-1 sensitivity. 6,521 citations -- the most cited paper in this entire collection.</td>
+</tr>
+<tr>
+<td style="text-align:center">19</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/29628290/" target="_blank"><strong>Thorsson et al., 2018</strong></a> -- The Immune Landscape of Cancer</td>
+<td style="text-align:center"><em>Immunity</em></td>
+<td style="text-align:left">Defined six immune subtypes across 33 cancer types based on immune cell composition, cytokine profiles, and survival associations. 4,561 citations. Provided the pan-cancer taxonomy that contextualizes every lung cancer immunoprofiling study.</td>
+</tr>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:left"><a href="https://pubmed.ncbi.nlm.nih.gov/34019806/" target="_blank"><strong>Bagaev et al., 2021</strong></a> -- Conserved pan-cancer microenvironment subtypes predict response to immunotherapy</td>
+<td style="text-align:center"><em>Cancer Cell</em></td>
+<td style="text-align:left">Identified four conserved TME archetypes with independent predictive value for immunotherapy response. Showed that microenvironment architecture carries information beyond tumor-intrinsic molecular features. 947 citations.</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="themes-at-a-glance.html" class="navigation navigation-prev " aria-label="Previous page: The Twelve Themes at a Glance">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../part-2-the-landscape/01-molecular-heterogeneity.html" class="navigation navigation-next " aria-label="Next page: 01 -- Molecular Heterogeneity">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"The 20 Papers That Define the Field","level":"2.3","depth":1,"next":{"title":"01 -- Molecular Heterogeneity","level":"3.1","depth":1,"path":"part-2-the-landscape/01-molecular-heterogeneity.md","ref":"part-2-the-landscape/01-molecular-heterogeneity.md","articles":[]},"previous":{"title":"The Twelve Themes at a Glance","level":"2.2","depth":1,"path":"part-1-the-search/themes-at-a-glance.md","ref":"part-1-the-search/themes-at-a-glance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing"],"root":"./docs","styles":{"website":"styles/custom.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Vignesh Ravichandran","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Lung Cancer Multi-Omics & AI/ML Literature Review","language":"en","gitbook":"*","description":"A systematic literature intelligence report: 66,879 papers across 12 themes covering multi-omics integration and AI/ML in lung cancer"},"file":{"path":"part-1-the-search/top-20-papers.md","mtime":"2026-04-18T18:16:22.548Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-04-18T18:37:24.609Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

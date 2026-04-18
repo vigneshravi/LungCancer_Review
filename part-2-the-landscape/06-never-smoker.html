@@ -1,0 +1,818 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>06 -- Never-Smoker Lung Cancer · Lung Cancer Multi-Omics & AI/ML Literature Review</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="author" content="Vignesh Ravichandran">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07-environmental.html" />
+    
+    
+    <link rel="prev" href="05-sex-gender.html" />
+    
+
+    <style>
+/* ============================================
+   Lung Cancer Multi-Omics Review — Custom Theme
+   Rich, colorful, scientific
+   ============================================ */
+
+/* --- Base colors --- */
+:root {
+  --primary: #1a6b8a;
+  --primary-light: #2d9cc3;
+  --accent-coral: #e8655a;
+  --accent-gold: #d4a843;
+  --accent-teal: #2ba5a5;
+  --accent-purple: #7b68ae;
+  --accent-green: #4caf7d;
+  --bg-light: #fafbfd;
+  --bg-callout: #f0f7fb;
+  --text-main: #2c3e50;
+  --border-subtle: #dce4ec;
+}
+
+/* --- Page body --- */
+.book .book-body .page-wrapper .page-inner {
+  max-width: 900px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-main);
+  line-height: 1.75;
+}
+
+/* --- Headings --- */
+h1 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--accent-coral);
+  padding-bottom: 12px;
+  font-size: 2.2em;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: var(--primary-light);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 8px;
+  margin-top: 2.5em;
+  font-size: 1.6em;
+}
+
+h3 {
+  color: var(--accent-teal);
+  font-size: 1.3em;
+  margin-top: 2em;
+}
+
+h4 {
+  color: var(--accent-purple);
+  font-size: 1.1em;
+}
+
+/* --- Blockquotes (callouts) --- */
+blockquote {
+  border-left: 5px solid var(--accent-coral);
+  background: linear-gradient(135deg, #fef5f4 0%, #fdf0ee 100%);
+  padding: 16px 24px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #4a3333;
+  box-shadow: 0 2px 8px rgba(232, 101, 90, 0.08);
+}
+
+blockquote strong {
+  color: var(--accent-coral);
+  font-style: normal;
+}
+
+/* Alternating callout styles for variety */
+blockquote + blockquote {
+  border-left-color: var(--accent-teal);
+  background: linear-gradient(135deg, #f0fafa 0%, #e8f6f6 100%);
+  color: #2a4444;
+}
+
+blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-gold);
+  background: linear-gradient(135deg, #fdf8ed 0%, #faf3e0 100%);
+  color: #4a3f22;
+}
+
+blockquote + blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-purple);
+  background: linear-gradient(135deg, #f5f2fa 0%, #ede8f5 100%);
+  color: #3d2d5c;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+table thead tr {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+}
+
+table thead th {
+  padding: 12px 16px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:hover {
+  background-color: #e8f4f8;
+  transition: background-color 0.2s ease;
+}
+
+table tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table tbody td strong {
+  color: var(--primary);
+}
+
+/* --- Links --- */
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--primary-light);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-coral);
+  border-bottom-color: var(--accent-coral);
+}
+
+/* --- Code blocks --- */
+pre {
+  background: linear-gradient(180deg, #1e2d3d 0%, #253443 100%);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #364958;
+}
+
+code {
+  background-color: #eef3f8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  color: var(--accent-coral);
+}
+
+pre code {
+  background: none;
+  color: #d4dce4;
+  padding: 0;
+}
+
+/* --- Horizontal rules --- */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent-coral), var(--accent-gold), var(--accent-teal), var(--accent-purple));
+  margin: 40px 0;
+  border-radius: 2px;
+}
+
+/* --- Images (infographics) --- */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
+  border: 2px solid var(--border-subtle);
+}
+
+/* --- Sidebar navigation --- */
+.book .book-summary {
+  background: linear-gradient(180deg, #1a2332 0%, #1e2d3d 100%);
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: #b8c9d9;
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: white;
+  background: rgba(45, 156, 195, 0.2);
+  border-left: 3px solid var(--accent-coral);
+}
+
+.book .book-summary ul.summary li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Bold PASS/STRONG/etc in tables --- */
+td:last-child {
+  font-weight: 500;
+}
+
+/* --- Special markers --- */
+em {
+  color: #5a6b7d;
+}
+
+/* --- Infographic captions --- */
+p > em:only-child {
+  display: block;
+  text-align: center;
+  color: #7a8b9d;
+  font-size: 0.9em;
+  margin-top: -12px;
+}
+
+</style>
+</head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I: The Search</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part-1-the-search/scale-and-methodology.html">
+            
+                <a href="../part-1-the-search/scale-and-methodology.html">
+            
+                    
+                    Scale and Methodology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part-1-the-search/themes-at-a-glance.html">
+            
+                <a href="../part-1-the-search/themes-at-a-glance.html">
+            
+                    
+                    The Twelve Themes at a Glance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../part-1-the-search/top-20-papers.html">
+            
+                <a href="../part-1-the-search/top-20-papers.html">
+            
+                    
+                    The 20 Papers That Define the Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part II: The Landscape</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="01-molecular-heterogeneity.html">
+            
+                <a href="01-molecular-heterogeneity.html">
+            
+                    
+                    01 -- Molecular Heterogeneity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="02-multi-omics-methods.html">
+            
+                <a href="02-multi-omics-methods.html">
+            
+                    
+                    02 -- Multi-Omics Integration Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-multi-omics-applications.html">
+            
+                <a href="03-multi-omics-applications.html">
+            
+                    
+                    03 -- Multi-Omics Applications in Lung Cancer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="04-ai-ml.html">
+            
+                <a href="04-ai-ml.html">
+            
+                    
+                    04 -- AI/ML in Lung Cancer and Oncology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="05-sex-gender.html">
+            
+                <a href="05-sex-gender.html">
+            
+                    
+                    05 -- Sex and Gender Differences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6" data-path="06-never-smoker.html">
+            
+                <a href="06-never-smoker.html">
+            
+                    
+                    06 -- Never-Smoker Lung Cancer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="07-environmental.html">
+            
+                <a href="07-environmental.html">
+            
+                    
+                    07 -- Environmental Exposures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="08-epigenetics.html">
+            
+                <a href="08-epigenetics.html">
+            
+                    
+                    08 -- Epigenetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="09-immune-biomarkers.html">
+            
+                <a href="09-immune-biomarkers.html">
+            
+                    
+                    09 -- Immune Biomarkers and Immunotherapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="10-translational.html">
+            
+                <a href="10-translational.html">
+            
+                    
+                    10 -- Translational Bottleneck and Real-World Outcomes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="11-drug-repurposing.html">
+            
+                <a href="11-drug-repurposing.html">
+            
+                    
+                    11 -- Drug Repurposing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="12-emerging-frontiers.html">
+            
+                <a href="12-emerging-frontiers.html">
+            
+                    
+                    12 -- Emerging Frontiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="13-feature-selection.html">
+            
+                <a href="13-feature-selection.html">
+            
+                    
+                    13 -- The Feature Selection Problem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part III: The Gaps</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../part-3-the-gaps/critical-gaps.html">
+            
+                <a href="../part-3-the-gaps/critical-gaps.html">
+            
+                    
+                    Critical Gaps Across All Themes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../part-3-the-gaps/surprising-findings.html">
+            
+                <a href="../part-3-the-gaps/surprising-findings.html">
+            
+                    
+                    Surprising Findings and Writing Recommendations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part IV: The Library</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../part-4-the-library/file-guide.html">
+            
+                <a href="../part-4-the-library/file-guide.html">
+            
+                    
+                    File Guide and Access
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Appendix</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../pmid-verification-report.html">
+            
+                <a href="../pmid-verification-report.html">
+            
+                    
+                    PMID Verification Report
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >06 -- Never-Smoker Lung Cancer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lung-cancer-in-never-smokers">Lung Cancer in Never-Smokers</h1>
+<blockquote>
+<p>"Never-smoker lung cancer is not the absence of a cause; it is a distinct disease sculpted by its own mutational forces, molecular subtypes, and epidemiological architecture."</p>
+</blockquote>
+<p><img src="../figures/06-infographic.png" alt="Theme 06 Infographic"></img>
+<em>Infographic generated via NotebookLM from the chapter source material.</em></p>
+<p><strong>Landscape stats:</strong> 2,689 papers mapped to this theme (2 Tier A, 76 Tier B). The literature spans molecular subtyping, whole-genome characterization, environmental risk factors, and therapeutic sensitivity, collectively establishing lung cancer in never-smokers (LCINS) as a biologically and clinically distinct entity.</p>
+<hr></hr>
+<h2 id="the-scale-of-a-neglected-problem">The Scale of a Neglected Problem</h2>
+<p>Lung cancer in individuals who have never smoked tobacco constitutes the fifth leading cause of cancer death worldwide when considered as an independent entity. Despite this burden, LCINS was historically treated as an epidemiological curiosity, a residual category defined by the absence of the dominant risk factor. Sun and colleagues provided one of the first comprehensive reviews of the never-smoker lung cancer literature, synthesizing evidence on incidence patterns, molecular features, and potential etiological agents, and made the case that LCINS deserved recognition as a disease category in its own right rather than a statistical footnote [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/17882278/" target="_blank">17882278</a>]. Subramanian and colleagues reinforced this position by reviewing the emerging molecular genetics of never-smoker tumors, documenting the high prevalence of EGFR mutations and ALK rearrangements relative to smoker-associated tumors and arguing that these molecular distinctions had direct therapeutic implications [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/18598932/" target="_blank">18598932</a>]. The conceptual reframing of LCINS as a distinct entity rather than a variant of smoking-associated lung cancer was a necessary precondition for the genomic investigations that followed.</p>
+<h2 id="the-genomic-taxonomy-piano-mezzo-and-forte">The Genomic Taxonomy: Piano, Mezzo, and Forte</h2>
+<p>The landmark study by Zhang and colleagues applied whole-genome sequencing to a large cohort of never-smoker lung adenocarcinomas and identified three molecular subtypes, evocatively named piano, mezzo, and forte, based on the intensity of their mutational burden [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/34493867/" target="_blank">34493867</a>]. The piano subtype was characterized by an extremely low tumor mutational burden, frequent EGFR driver mutations, a slow-growing indolent phenotype, and activation of progenitor cell programs. The mezzo subtype exhibited intermediate mutational load with enrichment for EGFR mutations alongside concurrent chromosomal arm-level events. The forte subtype, the most aggressive, displayed high mutational burden, complex structural rearrangements, and whole-genome doubling, resembling smoker-associated tumors in its genomic complexity despite arising in the absence of tobacco exposure. This tripartite classification provided the first coherent framework for understanding the biological heterogeneity within LCINS and explained, at least in part, the variable clinical behavior that had long puzzled clinicians. The piano-mezzo-forte taxonomy also carried prognostic implications: patients with piano subtype tumors exhibited substantially longer survival, consistent with their indolent biology, while forte subtype tumors behaved aggressively regardless of treatment.</p>
+<h2 id="mutational-processes-and-endogenous-mutagenesis">Mutational Processes and Endogenous Mutagenesis</h2>
+<p>If tobacco smoke is not the mutational driver in LCINS, what forces shape the somatic genome of these tumors? Diaz-Gay and colleagues addressed this question through a systematic analysis of mutational signatures across never-smoker and ever-smoker lung cancers, identifying distinct mutagenic forces operative in each group [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/40604281/" target="_blank">40604281</a>]. Never-smoker tumors were dominated by clock-like signatures attributed to spontaneous deamination of methylated cytosines (SBS1) and replication-associated errors (SBS5), with additional contributions from APOBEC-mediated mutagenesis (SBS2 and SBS13). The APOBEC signature was particularly notable because it was enriched in tumors with higher mutational burden, suggesting that endogenous mutagenesis by APOBEC cytidine deaminases might serve as the principal engine of clonal evolution in a subset of LCINS. Govindan and colleagues had earlier compared the mutational landscapes of smoker and never-smoker tumors using exome sequencing, reporting that never-smoker tumors harbored fewer total mutations but a higher proportion of therapeutically actionable alterations, a finding with direct clinical relevance [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/22980976/" target="_blank">22980976</a>]. The convergent finding across these studies was that LCINS genomics is defined not by random mutagenesis but by specific, identifiable mutational processes that impose structure on the somatic genome.</p>
+<h2 id="proteogenomic-characterization-in-east-asian-cohorts">Proteogenomic Characterization in East Asian Cohorts</h2>
+<p>The epidemiology of LCINS is strikingly non-uniform across populations, with the highest incidence observed in East Asian women, a pattern that has driven several large-scale molecular profiling efforts in Asian cohorts. Chen and colleagues conducted a proteogenomic analysis of lung adenocarcinomas from East Asian never-smokers, integrating whole-genome sequencing, RNA sequencing, and quantitative proteomics to construct a multi-omic portrait of these tumors [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/32649875/" target="_blank">32649875</a>]. Their analysis identified proteomic subtypes that only partially overlapped with transcriptomic classifications, revealing post-transcriptional regulatory layers that shaped functional tumor phenotypes. Notably, tumors from East Asian never-smokers exhibited distinctive metabolic reprogramming and immune microenvironment features compared with Western cohorts, raising the question of whether population-specific genetic backgrounds or environmental exposures contributed to these differences. The proteogenomic data also nominated several candidate therapeutic vulnerabilities not apparent from genomic data alone, including dependencies on specific metabolic pathways and protein quality control mechanisms.</p>
+<h2 id="clonal-evolution-and-tumor-heterogeneity">Clonal Evolution and Tumor Heterogeneity</h2>
+<p>Understanding how LCINS tumors evolve over time is essential for designing durable therapeutic strategies. Frankell and colleagues, through the TRACERx consortium, characterized the evolutionary trajectories of lung cancers with multi-region and longitudinal sampling, providing insights into the clonal dynamics of tumors including those arising in never-smokers [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/37046096/" target="_blank">37046096</a>]. Their work demonstrated that never-smoker tumors, despite their lower overall mutational burden, could exhibit significant intratumoral heterogeneity driven by chromosomal instability and parallel evolution of subclonal populations. Chabon and colleagues extended the evolutionary perspective by examining the genomic features of circulating tumor DNA (ctDNA) in patients with early-stage NSCLC, including never-smokers, and found that specific genomic features detectable in ctDNA could predict disease recurrence [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/32269342/" target="_blank">32269342</a>]. The ctDNA findings were particularly relevant for never-smokers with piano-subtype tumors, where the challenge of identifying the minority of patients destined for recurrence among a largely indolent population is a pressing clinical problem.</p>
+<h2 id="functional-genomics-and-pathway-dependencies">Functional Genomics and Pathway Dependencies</h2>
+<p>Beyond cataloguing mutations, functional genomic approaches have begun to reveal the pathway dependencies that sustain never-smoker tumors. Hamouz and colleagues employed CRISPR-based functional genomic screens to identify genes essential for the survival of EGFR-mutant lung cancer cells, the predominant genotype in LCINS [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/37686122/" target="_blank">37686122</a>]. Their screens identified both expected dependencies, confirming the central role of EGFR signaling, and unexpected vulnerabilities in RNA processing and chromatin remodeling pathways that could serve as targets for combination therapy. Yano and colleagues characterized the clinical and molecular features of non-smoking NSCLC in a Japanese cohort, documenting the high frequency of actionable mutations and the favorable response rates to targeted therapies [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/21562939/" target="_blank">21562939</a>]. Janne and colleagues reported on the activity of dacomitinib, a pan-HER inhibitor, in advanced NSCLC, with subgroup analyses demonstrating particular efficacy in the EGFR-mutant, never-smoker population [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/25456362/" target="_blank">25456362</a>]. Taken together, the functional genomics and clinical trial data support a model in which never-smoker tumors are characterized by deep dependence on a limited number of oncogenic drivers, creating therapeutic opportunities but also vulnerability to resistance through bypass pathway activation.</p>
+<h2 id="germline-susceptibility-and-inherited-risk">Germline Susceptibility and Inherited Risk</h2>
+<p>The clustering of LCINS in specific populations and families has motivated investigations into germline genetic susceptibility. Li and colleagues conducted a genome-wide association study (GWAS) focused on never-smoker lung cancer cases and identified susceptibility loci at chromosomal regions not previously associated with smoking-related lung cancer [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/20304703/" target="_blank">20304703</a>]. The identified variants mapped to genes involved in telomere maintenance and cell-cycle regulation, suggesting that inherited variation in genomic stability pathways may predispose to tumorigenesis in the absence of exogenous mutagens. The GWAS findings complemented family-based studies documenting elevated lung cancer risk among first-degree relatives of never-smoker patients, collectively arguing that LCINS has a genetic architecture distinct from tobacco-associated lung cancer.</p>
+<h2 id="environmental-tobacco-smoke-and-passive-exposure">Environmental Tobacco Smoke and Passive Exposure</h2>
+<p>Although LCINS is defined by the absence of active tobacco use, passive exposure to environmental tobacco smoke (ETS) has been consistently associated with elevated risk. Fontham and colleagues conducted a multicenter case-control study of ETS exposure and lung cancer risk in never-smoking women, reporting a dose-response relationship between cumulative household and workplace ETS exposure and lung cancer incidence [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/8196118/" target="_blank">8196118</a>]. The Fontham study was influential in establishing the causal link between passive smoking and lung cancer in never-smokers, contributing to subsequent public health interventions including indoor smoking bans. However, ETS exposure accounts for only a fraction of LCINS cases, and the majority of never-smoker lung cancer patients report minimal or no passive smoke exposure, reinforcing the need to identify additional etiological agents.</p>
+<h2 id="implications-for-the-manuscript">Implications for the Manuscript</h2>
+<p>The never-smoker lung cancer literature provides several essential threads for the manuscript. First, the Zhang piano-mezzo-forte taxonomy should be presented as the organizing framework for LCINS biology, because it reconciles the apparent heterogeneity of clinical behavior with underlying molecular subtypes and has direct prognostic relevance. Second, the mutational signature analyses from Diaz-Gay and Govindan establish that endogenous mutagenic processes, particularly APOBEC activity, are the dominant shapers of the LCINS genome, a finding that should be discussed in the context of therapeutic implications such as sensitivity to DNA damage-directed agents. Third, the proteogenomic data from Chen and colleagues illustrate the importance of protein-level analysis in populations where genomic data alone may miss functional complexity, and the manuscript should highlight the population-specific nature of LCINS biology. Fourth, the GWAS findings from Li and colleagues support the argument that germline risk profiling could eventually be incorporated into screening strategies for never-smokers, a population currently excluded from most low-dose CT screening guidelines despite bearing a significant lung cancer burden. The manuscript should argue that LCINS represents a paradigm case in which molecular subtyping, rather than smoking history, should drive clinical decision-making.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-sex-gender.html" class="navigation navigation-prev " aria-label="Previous page: 05 -- Sex and Gender Differences">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="07-environmental.html" class="navigation navigation-next " aria-label="Next page: 07 -- Environmental Exposures">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"06 -- Never-Smoker Lung Cancer","level":"3.6","depth":1,"next":{"title":"07 -- Environmental Exposures","level":"3.7","depth":1,"path":"part-2-the-landscape/07-environmental.md","ref":"part-2-the-landscape/07-environmental.md","articles":[]},"previous":{"title":"05 -- Sex and Gender Differences","level":"3.5","depth":1,"path":"part-2-the-landscape/05-sex-gender.md","ref":"part-2-the-landscape/05-sex-gender.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing"],"root":"./docs","styles":{"website":"styles/custom.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Vignesh Ravichandran","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Lung Cancer Multi-Omics & AI/ML Literature Review","language":"en","gitbook":"*","description":"A systematic literature intelligence report: 66,879 papers across 12 themes covering multi-omics integration and AI/ML in lung cancer"},"file":{"path":"part-2-the-landscape/06-never-smoker.md","mtime":"2026-04-18T18:16:22.551Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-04-18T18:37:24.609Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

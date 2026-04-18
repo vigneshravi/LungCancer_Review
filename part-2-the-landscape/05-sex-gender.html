@@ -1,0 +1,819 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>05 -- Sex and Gender Differences · Lung Cancer Multi-Omics & AI/ML Literature Review</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.7">
+        <meta name="author" content="Vignesh Ravichandran">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/custom.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-never-smoker.html" />
+    
+    
+    <link rel="prev" href="04-ai-ml.html" />
+    
+
+    <style>
+/* ============================================
+   Lung Cancer Multi-Omics Review — Custom Theme
+   Rich, colorful, scientific
+   ============================================ */
+
+/* --- Base colors --- */
+:root {
+  --primary: #1a6b8a;
+  --primary-light: #2d9cc3;
+  --accent-coral: #e8655a;
+  --accent-gold: #d4a843;
+  --accent-teal: #2ba5a5;
+  --accent-purple: #7b68ae;
+  --accent-green: #4caf7d;
+  --bg-light: #fafbfd;
+  --bg-callout: #f0f7fb;
+  --text-main: #2c3e50;
+  --border-subtle: #dce4ec;
+}
+
+/* --- Page body --- */
+.book .book-body .page-wrapper .page-inner {
+  max-width: 900px;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: var(--text-main);
+  line-height: 1.75;
+}
+
+/* --- Headings --- */
+h1 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--accent-coral);
+  padding-bottom: 12px;
+  font-size: 2.2em;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: var(--primary-light);
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 8px;
+  margin-top: 2.5em;
+  font-size: 1.6em;
+}
+
+h3 {
+  color: var(--accent-teal);
+  font-size: 1.3em;
+  margin-top: 2em;
+}
+
+h4 {
+  color: var(--accent-purple);
+  font-size: 1.1em;
+}
+
+/* --- Blockquotes (callouts) --- */
+blockquote {
+  border-left: 5px solid var(--accent-coral);
+  background: linear-gradient(135deg, #fef5f4 0%, #fdf0ee 100%);
+  padding: 16px 24px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #4a3333;
+  box-shadow: 0 2px 8px rgba(232, 101, 90, 0.08);
+}
+
+blockquote strong {
+  color: var(--accent-coral);
+  font-style: normal;
+}
+
+/* Alternating callout styles for variety */
+blockquote + blockquote {
+  border-left-color: var(--accent-teal);
+  background: linear-gradient(135deg, #f0fafa 0%, #e8f6f6 100%);
+  color: #2a4444;
+}
+
+blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-gold);
+  background: linear-gradient(135deg, #fdf8ed 0%, #faf3e0 100%);
+  color: #4a3f22;
+}
+
+blockquote + blockquote + blockquote + blockquote {
+  border-left-color: var(--accent-purple);
+  background: linear-gradient(135deg, #f5f2fa 0%, #ede8f5 100%);
+  color: #3d2d5c;
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+table thead tr {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+}
+
+table thead th {
+  padding: 12px 16px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:hover {
+  background-color: #e8f4f8;
+  transition: background-color 0.2s ease;
+}
+
+table tbody td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+table tbody td strong {
+  color: var(--primary);
+}
+
+/* --- Links --- */
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--primary-light);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-coral);
+  border-bottom-color: var(--accent-coral);
+}
+
+/* --- Code blocks --- */
+pre {
+  background: linear-gradient(180deg, #1e2d3d 0%, #253443 100%);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #364958;
+}
+
+code {
+  background-color: #eef3f8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  color: var(--accent-coral);
+}
+
+pre code {
+  background: none;
+  color: #d4dce4;
+  padding: 0;
+}
+
+/* --- Horizontal rules --- */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent-coral), var(--accent-gold), var(--accent-teal), var(--accent-purple));
+  margin: 40px 0;
+  border-radius: 2px;
+}
+
+/* --- Images (infographics) --- */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: block;
+  border: 2px solid var(--border-subtle);
+}
+
+/* --- Sidebar navigation --- */
+.book .book-summary {
+  background: linear-gradient(180deg, #1a2332 0%, #1e2d3d 100%);
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: #b8c9d9;
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: white;
+  background: rgba(45, 156, 195, 0.2);
+  border-left: 3px solid var(--accent-coral);
+}
+
+.book .book-summary ul.summary li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Bold PASS/STRONG/etc in tables --- */
+td:last-child {
+  font-weight: 500;
+}
+
+/* --- Special markers --- */
+em {
+  color: #5a6b7d;
+}
+
+/* --- Infographic captions --- */
+p > em:only-child {
+  display: block;
+  text-align: center;
+  color: #7a8b9d;
+  font-size: 0.9em;
+  margin-top: -12px;
+}
+
+</style>
+</head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part I: The Search</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part-1-the-search/scale-and-methodology.html">
+            
+                <a href="../part-1-the-search/scale-and-methodology.html">
+            
+                    
+                    Scale and Methodology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part-1-the-search/themes-at-a-glance.html">
+            
+                <a href="../part-1-the-search/themes-at-a-glance.html">
+            
+                    
+                    The Twelve Themes at a Glance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../part-1-the-search/top-20-papers.html">
+            
+                <a href="../part-1-the-search/top-20-papers.html">
+            
+                    
+                    The 20 Papers That Define the Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part II: The Landscape</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="01-molecular-heterogeneity.html">
+            
+                <a href="01-molecular-heterogeneity.html">
+            
+                    
+                    01 -- Molecular Heterogeneity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="02-multi-omics-methods.html">
+            
+                <a href="02-multi-omics-methods.html">
+            
+                    
+                    02 -- Multi-Omics Integration Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-multi-omics-applications.html">
+            
+                <a href="03-multi-omics-applications.html">
+            
+                    
+                    03 -- Multi-Omics Applications in Lung Cancer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="04-ai-ml.html">
+            
+                <a href="04-ai-ml.html">
+            
+                    
+                    04 -- AI/ML in Lung Cancer and Oncology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5" data-path="05-sex-gender.html">
+            
+                <a href="05-sex-gender.html">
+            
+                    
+                    05 -- Sex and Gender Differences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="06-never-smoker.html">
+            
+                <a href="06-never-smoker.html">
+            
+                    
+                    06 -- Never-Smoker Lung Cancer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="07-environmental.html">
+            
+                <a href="07-environmental.html">
+            
+                    
+                    07 -- Environmental Exposures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="08-epigenetics.html">
+            
+                <a href="08-epigenetics.html">
+            
+                    
+                    08 -- Epigenetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="09-immune-biomarkers.html">
+            
+                <a href="09-immune-biomarkers.html">
+            
+                    
+                    09 -- Immune Biomarkers and Immunotherapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="10-translational.html">
+            
+                <a href="10-translational.html">
+            
+                    
+                    10 -- Translational Bottleneck and Real-World Outcomes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="11-drug-repurposing.html">
+            
+                <a href="11-drug-repurposing.html">
+            
+                    
+                    11 -- Drug Repurposing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="12-emerging-frontiers.html">
+            
+                <a href="12-emerging-frontiers.html">
+            
+                    
+                    12 -- Emerging Frontiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="13-feature-selection.html">
+            
+                <a href="13-feature-selection.html">
+            
+                    
+                    13 -- The Feature Selection Problem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part III: The Gaps</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../part-3-the-gaps/critical-gaps.html">
+            
+                <a href="../part-3-the-gaps/critical-gaps.html">
+            
+                    
+                    Critical Gaps Across All Themes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../part-3-the-gaps/surprising-findings.html">
+            
+                <a href="../part-3-the-gaps/surprising-findings.html">
+            
+                    
+                    Surprising Findings and Writing Recommendations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part IV: The Library</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../part-4-the-library/file-guide.html">
+            
+                <a href="../part-4-the-library/file-guide.html">
+            
+                    
+                    File Guide and Access
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Appendix</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../pmid-verification-report.html">
+            
+                <a href="../pmid-verification-report.html">
+            
+                    
+                    PMID Verification Report
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >05 -- Sex and Gender Differences</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sex-and-gender-differences-in-lung-cancer">Sex and Gender Differences in Lung Cancer</h1>
+<blockquote>
+<p>"The assumption that lung cancer is a single disease affecting a homogeneous population has delayed recognition of fundamental biological divergences rooted in sex."</p>
+</blockquote>
+<p><img src="../figures/05-infographic.png" alt="Theme 05 Infographic"></img>
+<em>Infographic generated via NotebookLM from the chapter source material.</em></p>
+<p><strong>Landscape stats:</strong> 4,707 papers mapped to this theme (2 Tier A, 66 Tier B). The literature spans hormonal biology, immune checkpoint therapy outcomes, pharmacogenomics, and epidemiological trend analysis, reflecting a subfield that has matured considerably since early observations of differential survival in the 1990s.</p>
+<hr></hr>
+<h2 id="a-diverging-epidemic">A Diverging Epidemic</h2>
+<p>The global epidemiology of lung cancer has been reshaped by sex-specific trends that can no longer be attributed solely to differences in tobacco consumption. Patel and colleagues documented the emergence of what they termed a "women's epidemic," noting that age-adjusted incidence rates among women in several Western nations were rising even as rates among men had begun to plateau or decline [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/15082704/" target="_blank">15082704</a>]. This divergence was initially interpreted through the lens of lagging smoking uptake among women, but subsequent analyses have demonstrated that the gap persists after rigorous adjustment for pack-years, suggesting that host-related biological factors amplify susceptibility. Cohort studies from East Asia, where female never-smoker lung cancer rates are among the highest in the world, provided early evidence that tobacco exposure alone could not explain the sex disparity. These epidemiological observations set the stage for two decades of mechanistic inquiry into hormonal, immunological, and genomic mediators of sex differences in lung carcinogenesis.</p>
+<h2 id="estrogen-signaling-and-tumor-promotion">Estrogen Signaling and Tumor Promotion</h2>
+<p>The estrogen hypothesis has been the most extensively investigated biological mechanism underlying sex differences in lung cancer. Siegfried and colleagues provided foundational evidence that estrogen receptor signaling was active in non-small cell lung cancer (NSCLC) cells, demonstrating that 17-beta-estradiol could promote proliferation in cell lines expressing functional estrogen receptors [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/11905727/" target="_blank">11905727</a>]. This work established the conceptual framework that lung tumors were not merely passive bystanders to circulating hormones but active participants in estrogen-driven signaling cascades. Mah and colleagues extended this line of inquiry by characterizing aromatase expression in lung tumor tissue, showing that local estrogen biosynthesis within the tumor microenvironment could sustain proliferative signaling independent of ovarian or adrenal sources [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/17974992/" target="_blank">17974992</a>]. The clinical relevance of intratumoral aromatase was considerable: it implied that even postmenopausal women and men could harbor tumors with active estrogen signaling, broadening the population potentially affected by this pathway.</p>
+<p>The estrogen receptor landscape in lung cancer proved to be more complex than initially appreciated. Thaker and colleagues conducted a systematic examination of estrogen receptor subtypes, demonstrating that ER-beta, rather than ER-alpha, was the predominant isoform expressed in NSCLC tissue and that its expression correlated with distinct prognostic and predictive implications [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/40009905/" target="_blank">40009905</a>]. This finding was important because ER-beta signaling engages partially distinct downstream pathways from ER-alpha, including modulation of DNA repair and apoptotic programs, potentially explaining why estrogen's role in lung cancer does not simply recapitulate its role in breast cancer. The specificity of receptor subtype expression also carried therapeutic implications, raising the possibility that selective estrogen receptor modulators could be developed or repurposed with lung-appropriate receptor profiles.</p>
+<p>The Women's Health Initiative (WHI) provided one of the most provocative pieces of epidemiological evidence linking exogenous estrogen to lung cancer outcomes. Chlebowski and colleagues reported that women randomized to combined estrogen-plus-progestin therapy did not have a statistically significant increase in lung cancer incidence but did exhibit a significant increase in lung cancer mortality, particularly from NSCLC diagnosed at advanced stages [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/19767090/" target="_blank">19767090</a>]. The dissociation between incidence and mortality suggested that hormone replacement therapy might promote tumor progression or metastatic competence rather than initiation, a hypothesis consistent with the known role of estrogen in epithelial-to-mesenchymal transition and angiogenesis. The WHI findings, although derived from a trial not designed to evaluate lung cancer as a primary endpoint, generated sufficient concern to warrant inclusion in clinical discussions of hormone therapy risk.</p>
+<h2 id="proteogenomic-insights-into-estrogen-driven-biology">Proteogenomic Insights into Estrogen-Driven Biology</h2>
+<p>The advent of multi-omic profiling has allowed investigators to move beyond candidate gene approaches and examine estrogen signaling in the context of the full molecular architecture of lung tumors. Park and colleagues conducted a proteogenomic analysis that integrated whole-genome sequencing, transcriptomics, and quantitative proteomics to characterize estrogen-responsive pathways in lung adenocarcinoma [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/38607364/" target="_blank">38607364</a>]. Their analysis revealed that tumors from female patients exhibited distinctive proteomic signatures enriched for estrogen-regulated targets, even after controlling for smoking status and histological subtype. Importantly, the proteogenomic data identified downstream effectors of estrogen signaling that were not apparent from genomic data alone, underscoring the value of protein-level measurement in capturing functional pathway activity. These findings also raised the intriguing possibility that sex-stratified therapeutic strategies could be informed by proteomic biomarkers rather than relying solely on receptor expression measured by immunohistochemistry.</p>
+<h2 id="phytoestrogens-and-environmental-estrogen-mimics">Phytoestrogens and Environmental Estrogen Mimics</h2>
+<p>The relationship between dietary phytoestrogen exposure and lung cancer risk has received attention as a potential modifier of the sex-hormone axis. Schabath and colleagues investigated the association between phytoestrogen intake, assessed through validated dietary questionnaires, and lung cancer risk in a case-control design [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/16189362/" target="_blank">16189362</a>]. Their findings suggested that higher phytoestrogen consumption was associated with reduced lung cancer risk, an observation consistent with the known weak estrogenic and anti-estrogenic properties of isoflavones and lignans. The mechanistic interpretation remains debated: phytoestrogens may competitively inhibit endogenous estrogen binding to ER-beta, may exert anti-inflammatory effects independent of receptor binding, or may serve as markers of broader dietary patterns associated with reduced cancer risk. Regardless of the mechanism, the phytoestrogen literature added another dimension to the argument that estrogen biology is central to understanding sex differences in lung cancer, because it demonstrated that exogenous modulation of the pathway could shift risk.</p>
+<h2 id="sex-differences-in-immunotherapy-response">Sex Differences in Immunotherapy Response</h2>
+<p>The emergence of immune checkpoint inhibitors (ICIs) as a cornerstone of advanced NSCLC treatment introduced a new and clinically urgent dimension to the sex-and-gender question. Conforti and colleagues conducted a landmark meta-analysis of randomized controlled trials evaluating ICIs across multiple tumor types, including NSCLC, and reported that the survival benefit from ICI therapy was significantly greater in men than in women [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/29778737/" target="_blank">29778737</a>]. The pooled interaction analysis revealed a consistent pattern in which male patients derived a more pronounced improvement in overall survival from anti-PD-1 and anti-PD-L1 agents. This finding provoked considerable debate, in part because it appeared to conflict with the general immunological principle that women mount more robust adaptive immune responses than men. Proposed explanations included sex-specific differences in PD-L1 expression, tumor mutational burden, and the composition of the tumor immune microenvironment.</p>
+<p>Vavala and colleagues contributed to this discussion by examining sex-based differences in ICI efficacy specifically in the context of lung cancer clinical trials, finding that the male advantage was reproducible in lung-specific cohorts but that the magnitude of the sex interaction varied by ICI class and line of therapy [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/34769372/" target="_blank">34769372</a>]. Hu and colleagues provided mechanistic context by characterizing sex-specific differences in tumor microenvironment remodeling, demonstrating that tumors from male and female patients exhibited distinct patterns of immune cell infiltration, cytokine signaling, and checkpoint ligand expression [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/36869384/" target="_blank">36869384</a>]. These findings suggested that the observed clinical sex differences were not artifacts of confounding but reflected genuine biological divergence in the tumor-immune interface, raising the possibility that sex-stratified dosing or combination strategies might optimize outcomes.</p>
+<h2 id="gender-survival-and-the-social-determinants-of-outcome">Gender, Survival, and the Social Determinants of Outcome</h2>
+<p>Beyond biological sex, gender-related factors encompassing social roles, healthcare access, diagnostic delay, and treatment selection exert measurable effects on lung cancer outcomes. Madala and colleagues conducted a population-based analysis demonstrating that gender-associated variables, including marital status, insurance coverage, and time from symptom onset to diagnosis, independently predicted survival in multivariate models [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/35400597/" target="_blank">35400597</a>]. Their work highlighted the difficulty of disentangling sex from gender in observational studies and called for analytic frameworks that explicitly model both dimensions. Caliman and colleagues pursued a complementary approach, cataloguing sex-related biological differences (hormonal milieu, X-chromosome inactivation patterns, immune gene dosage) alongside gender-related social differences (smoking behavior, occupational exposures, screening uptake) to construct an integrative model of how both axes converge on lung cancer incidence and mortality [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/36045535/" target="_blank">36045535</a>].</p>
+<h2 id="targeted-therapy-and-sex-specific-pharmacology">Targeted Therapy and Sex-Specific Pharmacology</h2>
+<p>Sex differences extend into the pharmacology of targeted agents. Shaw and colleagues, in the pivotal trial of crizotinib for ALK-rearranged NSCLC, observed response patterns that, when examined in subgroup analyses, hinted at differential efficacy by sex, a finding consistent with known sex-based differences in drug metabolism, body composition, and tumor biology among ALK-positive patients [PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/21933749/" target="_blank">21933749</a>]. The ALK-positive population is itself enriched for young women and never-smokers, creating a demographic intersection that makes it challenging to attribute outcomes to any single variable. Nonetheless, pharmacokinetic studies have documented sex differences in CYP3A4 activity, the primary enzyme responsible for crizotinib metabolism, suggesting that exposure-response relationships may differ between men and women even when the same dose is administered. The broader implication is that sex-aware dosing, already a reality in some areas of oncology, may eventually be warranted for lung cancer targeted therapies.</p>
+<h2 id="implications-for-the-manuscript">Implications for the Manuscript</h2>
+<p>The sex-and-gender literature supports several arguments that should be developed in the final manuscript. First, the estrogen signaling axis represents a biologically validated pathway with therapeutic potential that remains underexploited in clinical trials, and a case can be made for sex-stratified correlative analyses in ongoing studies. Second, the Conforti meta-analysis and subsequent ICI-focused studies establish that sex is a clinically meaningful effect modifier for immunotherapy, warranting prospective evaluation of sex-stratified endpoints. Third, the proteogenomic data from Park and colleagues provide a template for how modern multi-omic approaches can identify sex-specific molecular features that would be invisible to single-platform analyses. Fourth, the literature on gender-related social determinants underscores the need for analytic frameworks that model sex and gender as distinct but interacting axes, rather than collapsing them into a single covariate. The manuscript should advocate for mandatory sex-disaggregated reporting in lung cancer clinical trials and translational studies, a recommendation supported by the breadth and consistency of the evidence reviewed here.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-ai-ml.html" class="navigation navigation-prev " aria-label="Previous page: 04 -- AI/ML in Lung Cancer and Oncology">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-never-smoker.html" class="navigation navigation-next " aria-label="Next page: 06 -- Never-Smoker Lung Cancer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"05 -- Sex and Gender Differences","level":"3.5","depth":1,"next":{"title":"06 -- Never-Smoker Lung Cancer","level":"3.6","depth":1,"path":"part-2-the-landscape/06-never-smoker.md","ref":"part-2-the-landscape/06-never-smoker.md","articles":[]},"previous":{"title":"04 -- AI/ML in Lung Cancer and Oncology","level":"3.4","depth":1,"path":"part-2-the-landscape/04-ai-ml.md","ref":"part-2-the-landscape/04-ai-ml.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing"],"root":"./docs","styles":{"website":"styles/custom.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Vignesh Ravichandran","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Lung Cancer Multi-Omics & AI/ML Literature Review","language":"en","gitbook":"*","description":"A systematic literature intelligence report: 66,879 papers across 12 themes covering multi-omics integration and AI/ML in lung cancer"},"file":{"path":"part-2-the-landscape/05-sex-gender.md","mtime":"2026-04-18T18:16:22.551Z","type":"markdown"},"gitbook":{"version":"6.1.7","time":"2026-04-18T18:37:24.609Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
