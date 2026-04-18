@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [Introduction](../SUMMARY.md)
+* [Introduction](README.md)
 
 ## Part I: The Search
 
@@ -22,6 +22,7 @@
 * [10 -- Translational Bottleneck and Real-World Outcomes](part-2-the-landscape/10-translational.md)
 * [11 -- Drug Repurposing](part-2-the-landscape/11-drug-repurposing.md)
 * [12 -- Emerging Frontiers](part-2-the-landscape/12-emerging-frontiers.md)
+* [13 -- The Feature Selection Problem](part-2-the-landscape/13-feature-selection.md)
 
 ## Part III: The Gaps
 

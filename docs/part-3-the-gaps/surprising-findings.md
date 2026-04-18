@@ -6,6 +6,16 @@ The following findings emerged from the search process itself and should influen
 
 ---
 
+## 0. The Feature Selection Choice Determines Everything
+
+**The single most surprising methodological finding:** across 25 multi-omics lung cancer studies, the downstream results -- including the number of subtypes, their biological interpretation, and their clinical utility -- are determined more by the feature selection strategy than by the integration algorithm. Studies that use Cox-based supervised filtering invariably find 2 subtypes; studies that use variance-based unsupervised filtering find 4-5. The integration method (MOVICS, iCluster, SNF) is secondary. Yet feature selection methodology is rarely discussed, justified, or compared within individual studies.
+
+Furthermore, 72% of studies use the same framework (MOVICS), 88% use the same data (TCGA), and the majority apply the same feature selection (univariate Cox p<0.05). This represents a **methodological monoculture** that risks producing convergent but potentially biased conclusions.
+
+**Implication:** This should be a central argument in the review, not a methods footnote. The manuscript should explicitly compare the two philosophies, demonstrate what biology is lost under each, and propose the hierarchical approach (biological clustering first, clinical stratification second) as a resolution. See [Chapter 13](../part-2-the-landscape/13-feature-selection.md).
+
+---
+
 ## 1. The Field Is Converging
 
 **1,928 papers span three or more themes simultaneously.** The most cross-cutting papers (spanning 7-8 themes) are all from 2024-2026, with titles combining multi-omics, AI/ML, immunotherapy, and biomarker discovery in single studies. This is not a coincidence -- it reflects a genuine convergence in the field toward integrative, multi-modal approaches.

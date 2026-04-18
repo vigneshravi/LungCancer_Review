@@ -4,11 +4,21 @@
 
 ---
 
-## The Two Highest-Priority Gaps
+## The Three Highest-Priority Gaps
 
-These two findings emerged independently across multiple themes and represent the review's most powerful original contribution.
+These findings emerged from systematic analysis across multiple themes and the author's census of 25 multi-omics lung cancer studies. They represent the review's most powerful original contributions.
 
-### 1. Sex-Stratified Multi-Omics Analyses Are Nearly Absent
+### 1. Feature Selection Philosophy Determines Everything -- And the Field Has Not Confronted This
+
+A systematic census of 25 multi-omics lung cancer studies revealed that the single most consequential methodological choice -- how features are selected before integration -- determines downstream results more than the integration algorithm itself. Of 18 MOVICS-based studies, 13 use Cox regression-based (supervised) feature selection, filtering to ~2,000-3,500 survival-associated features and invariably yielding 2 subtypes (high-risk vs. low-risk). Only 3 studies use variance-based (unsupervised) selection with ~10,000 features, yielding 4-5 biologically distinct subtypes.
+
+The **hidden problem** is that prognosis-first approaches collapse biologically distinct subtypes with similar survival into a single "high-risk" group. Two tumors may both have poor survival but for completely different reasons -- one is immune-excluded (potentially responsive to angiogenesis inhibitors to improve immune access), the other is metabolically dysfunctional (potentially responsive to metabolic inhibitors). Binary risk stratification merges them, losing the therapeutic information needed for precision medicine.
+
+Compounding this, clinical features (age, stage, smoking status, sex, performance status) are almost never integrated WITH molecular features -- they are used for post-hoc validation but not as input features. No study has systematically tested whether multi-omics molecular features add incremental predictive value over clinical features alone. Feature selection is almost exclusively univariate (one gene at a time), ignoring multivariate methods like elastic net, WGCNA network modules, or stability selection that could identify more robust and parsimonious feature sets.
+
+**What the manuscript should argue:** The field needs a hierarchical approach -- biological clustering first to preserve mechanistic heterogeneity, followed by within-subtype risk stratification using both molecular and clinical features. Feature selection methodology should be reported with the same rigor as integration algorithm choice. See [Chapter 13](../part-2-the-landscape/13-feature-selection.md) for the full analysis.
+
+### 2. Sex-Stratified Multi-Omics Analyses Are Nearly Absent
 
 Across themes 01 (Molecular Heterogeneity), 03 (Multi-Omics Applications), 04 (AI/ML), and 05 (Sex/Gender), we found that virtually no multi-omics study has systematically stratified results by biological sex. This is not a niche concern -- it is a blind spot affecting the validity of subtype classifications, drug response predictions, and biomarker panels that are implicitly trained on sex-mixed cohorts.
 
@@ -16,7 +26,7 @@ The evidence for sex-linked biological differences in lung cancer is strong: wom
 
 **What the manuscript should argue:** Sex-stratified multi-omics analysis should be a standard requirement, not an optional subgroup analysis. The pharmacogenomic databases (GDSC, CCLE) should report sex-stratified drug response data. AI/ML models should report performance metrics separately by sex.
 
-### 2. No Multi-Omics Study Has Focused on NSCLC in Never-Smokers
+### 3. No Multi-Omics Study Has Focused on NSCLC in Never-Smokers
 
 Despite never-smoker lung cancer accounting for 10-25% of all lung cancers globally -- and rising in incidence -- the intersection of multi-omics integration (Theme 03) with never-smoker biology (Theme 06) is an empty set. Every existing multi-omics NSCLC study pools smokers and never-smokers together, diluting the signal from a population with fundamentally different driver mutations, mutational signatures, and tumor microenvironment characteristics.
 
