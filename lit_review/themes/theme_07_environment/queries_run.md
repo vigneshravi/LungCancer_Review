@@ -1,0 +1,33 @@
+# Queries Run — theme_07: Environmental exposures and lung cancer
+
+- `PM2.5 AND lung cancer AND (mutation OR epigenetic OR EGFR)`
+  - pubmed: 39 results
+  - europepmc: 192 results
+- `radon AND lung cancer AND (molecular OR risk)`
+  - pubmed: 800 results
+  - europepmc: 183 results
+- `air pollution AND lung cancer AND incidence`
+  - pubmed: 800 results
+  - europepmc: 195 results
+- `occupational exposure AND lung cancer`
+  - pubmed: 800 results
+- `asbestos AND lung cancer AND molecular`
+  - pubmed: 484 results
+- `indoor air pollution AND lung cancer`
+  - pubmed: 800 results
+- `cooking fume AND lung cancer`
+  - pubmed: 56 results
+- `secondhand smoke AND lung cancer AND molecular`
+  - pubmed: 121 results
+- `diesel exhaust AND lung cancer`
+  - pubmed: 697 results
+- `PFAS AND cancer AND lung`
+  - pubmed: 27 results
+- `exposome AND lung cancer`
+  - pubmed: 84 results
+- `silica AND lung cancer`
+  - pubmed: 800 results
+- `pollution AND EGFR mutation AND lung`
+  - pubmed: 54 results
+- `wildfire smoke AND cancer`
+  - pubmed: 64 results

@@ -1,0 +1,31 @@
+# Queries Run — theme_08: Epigenetics in lung cancer
+
+- `DNA methylation AND lung cancer AND (subtype OR survival OR prognosis)`
+  - pubmed: 800 results
+  - europepmc: 183 results
+- `epigenetic AND lung adenocarcinoma AND molecular`
+  - pubmed: 532 results
+  - europepmc: 180 results
+- `miRNA AND lung cancer AND (prognosis OR therapy)`
+  - pubmed: 800 results
+  - europepmc: 187 results
+- `histone modification AND lung cancer`
+  - pubmed: 765 results
+- `chromatin accessibility AND lung cancer`
+  - pubmed: 255 results
+- `ATAC-seq AND lung cancer`
+  - pubmed: 308 results
+- `lncRNA AND lung cancer AND prognosis`
+  - pubmed: 800 results
+- `methylation signature AND NSCLC AND biomarker`
+  - pubmed: 53 results
+- `epigenome-wide association AND lung cancer`
+  - pubmed: 98 results
+- `circRNA AND lung cancer`
+  - pubmed: 800 results
+- `AHRR hypomethylation AND lung`
+  - pubmed: 28 results
+- `cfDNA methylation AND lung cancer`
+  - pubmed: 189 results
+- `enhancer AND lung cancer`
+  - pubmed: 800 results
