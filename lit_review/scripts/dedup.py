@@ -7,6 +7,8 @@ def deduplicate_papers(papers):
     """Deduplicate a list of paper dicts. Returns (unique_papers, dedup_stats)."""
     seen_pmids = {}
     seen_dois = {}
+    # Hash-based title index for O(1) fuzzy lookup
+    title_prefix_index = {}  # prefix -> list of (title, pmid)
     duplicates_doi = 0
     duplicates_title = 0
 
@@ -14,7 +16,6 @@ def deduplicate_papers(papers):
         pmid = paper.get("pmid", "")
         doi = (paper.get("doi", "") or "").lower().strip().replace("https://doi.org/", "").replace("http://doi.org/", "")
         title = paper.get("title", "").lower().strip()
-        first_author = paper.get("authors_first", "").lower().strip()
         year = paper.get("year", 0)
 
         # Check PMID
@@ -30,15 +31,17 @@ def deduplicate_papers(papers):
             duplicates_doi += 1
             continue
 
-        # Check title + first author + year (fuzzy)
+        # Check title fuzzy — use prefix bucketing for O(n) instead of O(n^2)
         found_dup = False
-        if title and len(title) > 20:
-            for existing_pmid, existing in seen_pmids.items():
-                existing_title = existing.get("title", "").lower().strip()
-                if existing_title and len(existing_title) > 20:
+        if title and len(title) > 20 and year:
+            prefix = title[:15]
+            candidates = title_prefix_index.get(prefix, [])
+            for cand_title, cand_pmid in candidates:
+                existing = seen_pmids.get(cand_pmid)
+                if existing:
                     existing_year = existing.get("year", 0)
-                    if year and existing_year and abs(year - existing_year) <= 1:
-                        if levenshtein_distance(title, existing_title) <= 3:
+                    if existing_year and abs(year - existing_year) <= 1:
+                        if levenshtein_distance(title, cand_title) <= 3:
                             _merge_paper(existing, paper)
                             duplicates_title += 1
                             found_dup = True
@@ -49,6 +52,9 @@ def deduplicate_papers(papers):
         # New paper
         if pmid:
             seen_pmids[pmid] = paper
+            if title and len(title) > 20:
+                prefix = title[:15]
+                title_prefix_index.setdefault(prefix, []).append((title, pmid))
         if doi:
             seen_dois[doi] = paper
 

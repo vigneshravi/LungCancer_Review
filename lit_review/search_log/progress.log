@@ -1,0 +1,36 @@
+# Literature Review Progress Log
+
+## Session: 2026-04-18
+
+### Phase 1: Setup (completed)
+- Created directory structure
+- Installed dependencies (requests, lxml, pandas, rispy, python-Levenshtein)
+- Built search pipeline scripts (search.py, scoring.py, dedup.py, write_ris.py, run_theme.py, synthesize.py)
+- Verified PubMed API access (no API key, using 1 req/sec rate limit)
+
+### Phase 2: Theme Searches (completed)
+- Theme 01 (heterogeneity): 6812 papers — 14 Tier A, 444 Tier B
+- Theme 02 (methods): 5289 papers — 6 Tier A, 196 Tier B
+- Theme 03 (applications): 2648 papers — 1 Tier A, 127 Tier B
+- Theme 04 (AI/ML): 11167 papers — 8 Tier A, 803 Tier B
+- Theme 05 (sex/gender): 4707 papers — 2 Tier A, 66 Tier B
+- Theme 06 (never-smoker): 2689 papers — 2 Tier A, 76 Tier B
+- Theme 07 (environment): 4023 papers — 2 Tier A, 79 Tier B
+- Theme 08 (epigenetics): 5902 papers — 0 Tier A, 91 Tier B
+- Theme 09 (immune biomarkers): 6459 papers — 9 Tier A, 679 Tier B
+- Theme 10 (translational): 6431 papers — 0 Tier A, 67 Tier B
+- Theme 11 (drug repurposing): 6386 papers — 0 Tier A, 24 Tier B
+- Theme 12 (emerging frontiers): 6179 papers — 2 Tier A, 108 Tier B
+
+All themes far exceeded minimum targets.
+All synthesis notes (section_notes.md) written for all 12 themes.
+
+### Phase 3: Master Library (in progress)
+- Cross-theme deduplication
+- Master RIS, CSV, theme tags
+
+### Notes
+- Semantic Scholar enrichment was limited to anchors + ~30 papers per theme for efficiency
+- PubMed queries capped at 800 results per query (relevance-sorted)
+- Europe PMC supplementary searches on 3 broadest queries per theme
+- Cache-based approach means re-runs are fast
