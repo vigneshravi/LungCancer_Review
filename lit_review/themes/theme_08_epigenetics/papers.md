@@ -2,8 +2,8 @@
 
 **Total papers: 5902**
 **Tier A (high priority): 0**
-**Tier B (supporting): 89**
-**Tier C (optional): 5813**
+**Tier B (supporting): 91**
+**Tier C (optional): 5811**
 
 ---
 
@@ -326,67 +326,75 @@
 
 ---
 
-### 53. Ligthart et al. 2016 — DNA methylation signatures of chronic low-grade inflammation are associated with
+### 53. Zhu et al. 2001 — DNA methyltransferase inhibition enhances apoptosis induced by histone deacetyla
+
+**PMID:** 11245429 | **DOI:** N/A | **Journal:** *Cancer research* | **Score:** 0.43
+
+**Citations:** 227 (influential: 3)
+
+---
+
+### 54. Ligthart et al. 2016 — DNA methylation signatures of chronic low-grade inflammation are associated with
 
 **PMID:** 27955697 | **DOI:** [10.1186/s13059-016-1119-5](https://doi.org/10.1186/s13059-016-1119-5) | **Journal:** *Genome biology* | **Score:** 0.42
 
 ---
 
-### 54. Schlosser et al. 2021 — Meta-analyses identify DNA methylation associated with kidney function and damag
+### 55. Schlosser et al. 2021 — Meta-analyses identify DNA methylation associated with kidney function and damag
 
 **PMID:** 34887417 | **DOI:** [10.1038/s41467-021-27234-3](https://doi.org/10.1038/s41467-021-27234-3) | **Journal:** *Nature communications* | **Score:** 0.42
 
 ---
 
-### 55. McAllan et al. 2023 — Integrative genomic analyses in adipocytes implicate DNA methylation in human ob
+### 56. McAllan et al. 2023 — Integrative genomic analyses in adipocytes implicate DNA methylation in human ob
 
 **PMID:** 37188674 | **DOI:** [10.1038/s41467-023-38439-z](https://doi.org/10.1038/s41467-023-38439-z) | **Journal:** *Nature communications* | **Score:** 0.42
 
 ---
 
-### 56. Zhang et al. 2024 — txci-ATAC-seq: a massive-scale single-cell technique to profile chromatin access
+### 57. Zhang et al. 2024 — txci-ATAC-seq: a massive-scale single-cell technique to profile chromatin access
 
 **PMID:** 38519979 | **DOI:** [10.1186/s13059-023-03150-1](https://doi.org/10.1186/s13059-023-03150-1) | **Journal:** *Genome biology* | **Score:** 0.42
 
 ---
 
-### 57. Duplaquet et al. 2024 — Mammalian SWI/SNF complex activity regulates POU2F3 and constitutes a targetable
+### 58. Duplaquet et al. 2024 — Mammalian SWI/SNF complex activity regulates POU2F3 and constitutes a targetable
 
 **PMID:** 39029464 | **DOI:** [10.1016/j.ccell.2024.06.012](https://doi.org/10.1016/j.ccell.2024.06.012) | **Journal:** *Cancer cell* | **Score:** 0.42
 
 ---
 
-### 58. Zhao et al. 2025 — Integrated multiomics signatures to optimize the accurate diagnosis of lung canc
+### 59. Zhao et al. 2025 — Integrated multiomics signatures to optimize the accurate diagnosis of lung canc
 
 **PMID:** 39747216 | **DOI:** [10.1038/s41467-024-55594-z](https://doi.org/10.1038/s41467-024-55594-z) | **Journal:** *Nature communications* | **Score:** 0.42
 
 ---
 
-### 59. Wang et al. 2025 — Multi-omics analyses reveal biological and clinical insights in recurrent stage 
+### 60. Wang et al. 2025 — Multi-omics analyses reveal biological and clinical insights in recurrent stage 
 
 **PMID:** 39929832 | **DOI:** [10.1038/s41467-024-55068-2](https://doi.org/10.1038/s41467-024-55068-2) | **Journal:** *Nature communications* | **Score:** 0.42
 
 ---
 
-### 60. Ran et al. 2025 — PARP inhibitor radiosensitization enhances anti-PD-L1 immunotherapy through stab
+### 61. Ran et al. 2025 — PARP inhibitor radiosensitization enhances anti-PD-L1 immunotherapy through stab
 
 **PMID:** 40038278 | **DOI:** [10.1038/s41467-025-57257-z](https://doi.org/10.1038/s41467-025-57257-z) | **Journal:** *Nature communications* | **Score:** 0.42
 
 ---
 
-### 61. Galan-Cobo et al. 2025 — KEAP1 and STK11/LKB1 alterations enhance vulnerability to ATR inhibition in KRAS
+### 62. Galan-Cobo et al. 2025 — KEAP1 and STK11/LKB1 alterations enhance vulnerability to ATR inhibition in KRAS
 
 **PMID:** 40645185 | **DOI:** [10.1016/j.ccell.2025.06.011](https://doi.org/10.1016/j.ccell.2025.06.011) | **Journal:** *Cancer cell* | **Score:** 0.42
 
 ---
 
-### 62. Hu et al. 2025 — circATF6 triggers calcium overload to synergize with EGFR-TKI in non-small cell 
+### 63. Hu et al. 2025 — circATF6 triggers calcium overload to synergize with EGFR-TKI in non-small cell 
 
 **PMID:** 41351835 | **DOI:** [10.1016/j.celrep.2025.116659](https://doi.org/10.1016/j.celrep.2025.116659) | **Journal:** *Cell reports* | **Score:** 0.42
 
 ---
 
-### 63. Usadel et al. 2002 — Quantitative adenomatous polyposis coli promoter methylation analysis in tumor t
+### 64. Usadel et al. 2002 — Quantitative adenomatous polyposis coli promoter methylation analysis in tumor t
 
 **PMID:** 11809682 | **DOI:** N/A | **Journal:** *Cancer research* | **Score:** 0.42
 
@@ -394,115 +402,115 @@
 
 ---
 
-### 64. Paliwal et al. 2010 — Aberrant DNA methylation links cancer susceptibility locus 15q25.1 to apoptotic 
+### 65. Paliwal et al. 2010 — Aberrant DNA methylation links cancer susceptibility locus 15q25.1 to apoptotic 
 
 **PMID:** 20332232 | **DOI:** [10.1158/0008-5472.CAN-09-4550](https://doi.org/10.1158/0008-5472.CAN-09-4550) | **Journal:** *Cancer research* | **Score:** 0.41
 
 ---
 
-### 65. Schuster-Böckler et al. 2012 — Chromatin organization is a major influence on regional mutation rates in human 
+### 66. Schuster-Böckler et al. 2012 — Chromatin organization is a major influence on regional mutation rates in human 
 
 **PMID:** 22820252 | **DOI:** [10.1038/nature11273](https://doi.org/10.1038/nature11273) | **Journal:** *Nature* | **Score:** 0.41
 
 ---
 
-### 66. Nikolaidis et al. 2012 — DNA methylation biomarkers offer improved diagnostic efficiency in lung cancer.
+### 67. Nikolaidis et al. 2012 — DNA methylation biomarkers offer improved diagnostic efficiency in lung cancer.
 
 **PMID:** 22962272 | **DOI:** [10.1158/0008-5472.CAN-12-2309](https://doi.org/10.1158/0008-5472.CAN-12-2309) | **Journal:** *Cancer research* | **Score:** 0.41
 
 ---
 
-### 67. Klein et al. 2016 — PHF20 Readers Link Methylation of Histone H3K4 and p53 with H4K16 Acetylation.
+### 68. Klein et al. 2016 — PHF20 Readers Link Methylation of Histone H3K4 and p53 with H4K16 Acetylation.
 
 **PMID:** 27760318 | **DOI:** [10.1016/j.celrep.2016.09.056](https://doi.org/10.1016/j.celrep.2016.09.056) | **Journal:** *Cell reports* | **Score:** 0.41
 
 ---
 
-### 68. Gardner et al. 2017 — Chemosensitive Relapse in Small Cell Lung Cancer Proceeds through an EZH2-SLFN11
+### 69. Gardner et al. 2017 — Chemosensitive Relapse in Small Cell Lung Cancer Proceeds through an EZH2-SLFN11
 
 **PMID:** 28196596 | **DOI:** [10.1016/j.ccell.2017.01.006](https://doi.org/10.1016/j.ccell.2017.01.006) | **Journal:** *Cancer cell* | **Score:** 0.41
 
 ---
 
-### 69. Grasse et al. 2018 — Epigenomic profiling of non-small cell lung cancer xenografts uncover LRP12 DNA 
+### 70. Grasse et al. 2018 — Epigenomic profiling of non-small cell lung cancer xenografts uncover LRP12 DNA 
 
 **PMID:** 30029672 | **DOI:** [10.1186/s13073-018-0562-1](https://doi.org/10.1186/s13073-018-0562-1) | **Journal:** *Genome medicine* | **Score:** 0.41
 
 ---
 
-### 70. Shao et al. 2019 — The inherited variations of a p53-responsive enhancer in 13q12.12 confer lung ca
+### 71. Shao et al. 2019 — The inherited variations of a p53-responsive enhancer in 13q12.12 confer lung ca
 
 **PMID:** 31126313 | **DOI:** [10.1186/s13059-019-1696-1](https://doi.org/10.1186/s13059-019-1696-1) | **Journal:** *Genome biology* | **Score:** 0.41
 
 ---
 
-### 71. Pan et al. 2020 — lncRNA JPX/miR-33a-5p/Twist1 axis regulates tumorigenesis and metastasis of lung
+### 72. Pan et al. 2020 — lncRNA JPX/miR-33a-5p/Twist1 axis regulates tumorigenesis and metastasis of lung
 
 **PMID:** 31941509 | **DOI:** [10.1186/s12943-020-1133-9](https://doi.org/10.1186/s12943-020-1133-9) | **Journal:** *Molecular cancer* | **Score:** 0.41
 
 ---
 
-### 72. Hua et al. 2020 — Genetic and epigenetic intratumor heterogeneity impacts prognosis of lung adenoc
+### 73. Hua et al. 2020 — Genetic and epigenetic intratumor heterogeneity impacts prognosis of lung adenoc
 
 **PMID:** 32424208 | **DOI:** [10.1038/s41467-020-16295-5](https://doi.org/10.1038/s41467-020-16295-5) | **Journal:** *Nature communications* | **Score:** 0.41
 
 ---
 
-### 73. Prekovic et al. 2021 — Glucocorticoid receptor triggers a reversible drug-tolerant dormancy state with 
+### 74. Prekovic et al. 2021 — Glucocorticoid receptor triggers a reversible drug-tolerant dormancy state with 
 
 **PMID:** 34272384 | **DOI:** [10.1038/s41467-021-24537-3](https://doi.org/10.1038/s41467-021-24537-3) | **Journal:** *Nature communications* | **Score:** 0.41
 
 ---
 
-### 74. Liu et al. 2022 — Chromatin Remodeling Induced by ARID1A Loss in Lung Cancer Promotes Glycolysis a
+### 75. Liu et al. 2022 — Chromatin Remodeling Induced by ARID1A Loss in Lung Cancer Promotes Glycolysis a
 
 **PMID:** 34987057 | **DOI:** [10.1158/0008-5472.CAN-21-0763](https://doi.org/10.1158/0008-5472.CAN-21-0763) | **Journal:** *Cancer research* | **Score:** 0.41
 
 ---
 
-### 75. Balasundaram et al. 2023 — In silico analysis revealed the potential circRNA-miRNA-mRNA regulative network 
+### 76. Balasundaram et al. 2023 — In silico analysis revealed the potential circRNA-miRNA-mRNA regulative network 
 
 **PMID:** 36495751 | **DOI:** [10.1016/j.compbiomed.2022.106315](https://doi.org/10.1016/j.compbiomed.2022.106315) | **Journal:** *Computers in biology and medicine* | **Score:** 0.41
 
 ---
 
-### 76. Lin et al. 2023 — Implications of Transglutaminase-Mediated Protein Serotonylation in the Epigenet
+### 77. Lin et al. 2023 — Implications of Transglutaminase-Mediated Protein Serotonylation in the Epigenet
 
 **PMID:** 36831672 | **DOI:** [10.3390/cancers15041332](https://doi.org/10.3390/cancers15041332) | **Journal:** *Cancers* | **Score:** 0.41
 
 ---
 
-### 77. Ma et al. 2023 — The diagnostic potential of a circRNA-miRNA network in non-small cell lung cance
+### 78. Ma et al. 2023 — The diagnostic potential of a circRNA-miRNA network in non-small cell lung cance
 
 **PMID:** 37069371 | **DOI:** [10.1007/s00109-023-02306-7](https://doi.org/10.1007/s00109-023-02306-7) | **Journal:** *Journal of molecular medicine (Berlin, Germany)* | **Score:** 0.41
 
 ---
 
-### 78. Kim et al. 2023 — Epigenetic regulation of SMAD3 by histone methyltransferase SMYD2 promotes lung 
+### 79. Kim et al. 2023 — Epigenetic regulation of SMAD3 by histone methyltransferase SMYD2 promotes lung 
 
 **PMID:** 37121971 | **DOI:** [10.1038/s12276-023-00987-1](https://doi.org/10.1038/s12276-023-00987-1) | **Journal:** *Experimental & molecular medicine* | **Score:** 0.41
 
 ---
 
-### 79. Monte-Serrano et al. 2023 — The pattern of histone H3 epigenetic posttranslational modifications is regulate
+### 80. Monte-Serrano et al. 2023 — The pattern of histone H3 epigenetic posttranslational modifications is regulate
 
 **PMID:** 37179361 | **DOI:** [10.1186/s13072-023-00494-7](https://doi.org/10.1186/s13072-023-00494-7) | **Journal:** *Epigenetics & chromatin* | **Score:** 0.41
 
 ---
 
-### 80. Alnefaie et al. 2024 — A review of the complex interplay between chemoresistance and lncRNAs in lung ca
+### 81. Alnefaie et al. 2024 — A review of the complex interplay between chemoresistance and lncRNAs in lung ca
 
 **PMID:** 39639388 | **DOI:** [10.1186/s12967-024-05877-2](https://doi.org/10.1186/s12967-024-05877-2) | **Journal:** *Journal of translational medicine* | **Score:** 0.41
 
 ---
 
-### 81. Onieva et al. 2026 — Integrative multiomic profiling of cfDNA methylation and EV-miRNAs identifies im
+### 82. Onieva et al. 2026 — Integrative multiomic profiling of cfDNA methylation and EV-miRNAs identifies im
 
 **PMID:** 41545302 | **DOI:** [10.1136/jitc-2025-013592](https://doi.org/10.1136/jitc-2025-013592) | **Journal:** *Journal for immunotherapy of cancer* | **Score:** 0.41
 
 ---
 
-### 82. Morrissey et al. 2001 — Epigenetic inactivation of the RASSF1A 3p21.3 tumor suppressor gene in both clea
+### 83. Morrissey et al. 2001 — Epigenetic inactivation of the RASSF1A 3p21.3 tumor suppressor gene in both clea
 
 **PMID:** 11585766 | **DOI:** N/A | **Journal:** *Cancer research* | **Score:** 0.41
 
@@ -510,43 +518,51 @@
 
 ---
 
-### 83. Tada et al. 2006 — Epigenetic modulation of tumor suppressor CCAAT/enhancer binding protein alpha a
+### 84. Kim et al. 2001 — p16(INK4a) and histology-specific methylation of CpG islands by exposure to toba
+
+**PMID:** 11309302 | **DOI:** N/A | **Journal:** *Cancer research* | **Score:** 0.40
+
+**Citations:** 190 (influential: 2)
+
+---
+
+### 85. Tada et al. 2006 — Epigenetic modulation of tumor suppressor CCAAT/enhancer binding protein alpha a
 
 **PMID:** 16537832 | **DOI:** [10.1093/jnci/djj093](https://doi.org/10.1093/jnci/djj093) | **Journal:** *Journal of the National Cancer Institute* | **Score:** 0.40
 
 ---
 
-### 84. Jakopovic et al. 2013 — Targeting the epigenome in lung cancer: expanding approaches to epigenetic thera
+### 86. Jakopovic et al. 2013 — Targeting the epigenome in lung cancer: expanding approaches to epigenetic thera
 
 **PMID:** 24130964 | **DOI:** [10.3389/fonc.2013.00261](https://doi.org/10.3389/fonc.2013.00261) | **Journal:** *Frontiers in oncology* | **Score:** 0.40
 
 ---
 
-### 85. Sundar et al. 2016 — Gene expression profiling of epigenetic chromatin modification enzymes and histo
+### 87. Sundar et al. 2016 — Gene expression profiling of epigenetic chromatin modification enzymes and histo
 
 **PMID:** 27793800 | **DOI:** [10.1152/ajplung.00253.2016](https://doi.org/10.1152/ajplung.00253.2016) | **Journal:** *American journal of physiology. Lung cellular and molecular physiology* | **Score:** 0.40
 
 ---
 
-### 86. Teng et al. 2021 — RNA Modifications and Epigenetics in Modulation of Lung Cancer and Pulmonary Dis
+### 88. Teng et al. 2021 — RNA Modifications and Epigenetics in Modulation of Lung Cancer and Pulmonary Dis
 
 **PMID:** 34638933 | **DOI:** [10.3390/ijms221910592](https://doi.org/10.3390/ijms221910592) | **Journal:** *International journal of molecular sciences* | **Score:** 0.40
 
 ---
 
-### 87. Baumann et al. 2025 — Epigenomic Echoes-Decoding Genomic and Epigenetic Instability to Distinguish Lun
+### 89. Baumann et al. 2025 — Epigenomic Echoes-Decoding Genomic and Epigenetic Instability to Distinguish Lun
 
 **PMID:** 39982247 | **DOI:** [10.3390/epigenomes9010005](https://doi.org/10.3390/epigenomes9010005) | **Journal:** *Epigenomes* | **Score:** 0.40
 
 ---
 
-### 88. Xu et al. 2025 — Epigenetic mechanisms in non-small cell lung cancer therapy and chemoresistance.
+### 90. Xu et al. 2025 — Epigenetic mechanisms in non-small cell lung cancer therapy and chemoresistance.
 
 **PMID:** 40446969 | **DOI:** [10.1016/j.bbcan.2025.189356](https://doi.org/10.1016/j.bbcan.2025.189356) | **Journal:** *Biochimica et biophysica acta. Reviews on cancer* | **Score:** 0.40
 
 ---
 
-### 89. He et al. 2026 — Reprogramming resistance in advanced lung cancer: epigenetic modulation to resto
+### 91. He et al. 2026 — Reprogramming resistance in advanced lung cancer: epigenetic modulation to resto
 
 **PMID:** 41866608 | **DOI:** [10.1007/s12094-026-04316-6](https://doi.org/10.1007/s12094-026-04316-6) | **Journal:** *Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico* | **Score:** 0.40
 
@@ -736,4 +752,4 @@
 ---
 
 
-*... and 5783 more Tier C papers (see papers.csv)*
+*... and 5781 more Tier C papers (see papers.csv)*

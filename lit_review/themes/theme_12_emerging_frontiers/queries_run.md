@@ -1,0 +1,39 @@
+# Queries Run — theme_12: Single-cell, spatial, metabolomic, liquid biopsy frontiers
+
+- `single-cell RNA AND lung cancer AND heterogeneity`
+  - pubmed: 480 results
+  - europepmc: 181 results
+- `single-cell AND NSCLC AND tumor microenvironment`
+  - pubmed: 342 results
+  - europepmc: 182 results
+- `scRNA-seq AND lung adenocarcinoma`
+  - pubmed: 681 results
+  - europepmc: 190 results
+- `spatial transcriptomics AND lung cancer`
+  - pubmed: 800 results
+- `spatial proteomics AND lung cancer`
+  - pubmed: 136 results
+- `imaging mass cytometry AND lung cancer`
+  - pubmed: 134 results
+- `Visium AND lung cancer`
+  - pubmed: 26 results
+- `CODEX AND lung cancer`
+  - pubmed: 13 results
+- `metabolomics AND lung cancer AND biomarker`
+  - pubmed: 704 results
+- `lipidomics AND lung cancer`
+  - pubmed: 231 results
+- `tryptophan metabolism AND lung cancer`
+  - pubmed: 349 results
+- `liquid biopsy AND lung cancer AND (methylation OR ctDNA)`
+  - pubmed: 762 results
+- `cfDNA AND lung cancer AND early detection`
+  - pubmed: 533 results
+- `minimal residual disease AND lung cancer`
+  - pubmed: 800 results
+- `CAPP-Seq AND lung`
+  - pubmed: 20 results
+- `microbiome AND lung cancer`
+  - pubmed: 800 results
+- `gut microbiome AND immunotherapy AND lung`
+  - pubmed: 266 results

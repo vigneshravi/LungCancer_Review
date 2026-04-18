@@ -1,0 +1,33 @@
+# Queries Run — theme_11: Drug repurposing in oncology
+
+- `drug repurposing AND cancer AND (computational OR multi-omics)`
+  - pubmed: 800 results
+  - europepmc: 185 results
+- `drug-gene interaction AND cancer AND prediction`
+  - pubmed: 119 results
+  - europepmc: 177 results
+- `"dimethyl fumarate" AND KEAP1 AND cancer`
+  - pubmed: 13 results
+  - europepmc: 190 results
+- `connectivity map AND cancer`
+  - pubmed: 800 results
+- `pharmacogenomic AND lung cancer`
+  - pubmed: 800 results
+- `GDSC AND drug response AND cancer`
+  - pubmed: 347 results
+- `CCLE AND drug AND lung`
+  - pubmed: 43 results
+- `drug sensitivity AND lung cancer AND biomarker`
+  - pubmed: 800 results
+- `synthetic lethality AND lung cancer`
+  - pubmed: 293 results
+- `network pharmacology AND cancer`
+  - pubmed: 800 results
+- `DGIdb drug gene interaction`
+  - pubmed: 248 results
+- `repositioning AND oncology`
+  - pubmed: 800 results
+- `PRISM drug screen`
+  - pubmed: 33 results
+- `drug combination AND lung cancer AND computational`
+  - pubmed: 800 results

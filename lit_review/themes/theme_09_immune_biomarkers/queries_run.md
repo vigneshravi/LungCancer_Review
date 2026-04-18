@@ -1,0 +1,35 @@
+# Queries Run — theme_09: Immune biomarkers and immunotherapy response
+
+- `PD-L1 AND NSCLC AND (limitation OR heterogeneity OR resistance)`
+  - pubmed: 800 results
+  - europepmc: 187 results
+- `tumor mutational burden AND immunotherapy AND lung cancer`
+  - pubmed: 800 results
+  - europepmc: 186 results
+- `"Immunophenoscore" OR "Tempus IPS"`
+  - pubmed: 331 results
+  - europepmc: 185 results
+- `immune subtype AND pan-cancer`
+  - pubmed: 622 results
+- `tumor microenvironment AND immunotherapy AND NSCLC`
+  - pubmed: 800 results
+- `HLA AND immunotherapy response`
+  - pubmed: 800 results
+- `gene expression signature AND immunotherapy AND lung`
+  - pubmed: 800 results
+- `neoantigen AND lung cancer AND immunotherapy`
+  - pubmed: 800 results
+- `MSI AND lung cancer AND immunotherapy`
+  - pubmed: 196 results
+- `T cell inflamed AND lung cancer`
+  - pubmed: 147 results
+- `Thorsson immune landscape cancer`
+  - pubmed: 9 results
+- `Bagaev conserved microenvironment`
+  - pubmed: 2 results
+- `Charoentong immunogenomic`
+  - pubmed: 3 results
+- `STK11 AND KEAP1 AND immunotherapy AND NSCLC`
+  - pubmed: 85 results
+- `gut microbiome AND immunotherapy AND response`
+  - pubmed: 800 results

@@ -1,0 +1,37 @@
+# Queries Run — theme_10: Targeted therapy access, translational bottleneck, real-world outcomes
+
+- `precision oncology AND real-world AND lung cancer`
+  - pubmed: 281 results
+  - europepmc: 188 results
+- `targeted therapy AND utilization AND NSCLC`
+  - pubmed: 800 results
+  - europepmc: 190 results
+- `biomarker testing AND disparity AND lung cancer`
+  - pubmed: 75 results
+  - europepmc: 194 results
+- `clinical trial representation AND (women OR minority) AND cancer`
+  - pubmed: 242 results
+- `health disparity AND lung cancer`
+  - pubmed: 800 results
+- `molecular tumor board AND outcome`
+  - pubmed: 800 results
+- `real-world evidence AND NSCLC AND immunotherapy`
+  - pubmed: 210 results
+- `implementation science AND precision oncology`
+  - pubmed: 570 results
+- `access AND targeted therapy AND oncology`
+  - pubmed: 800 results
+- `guideline adherence AND NSCLC`
+  - pubmed: 149 results
+- `ancestry AND clinical trial AND cancer`
+  - pubmed: 190 results
+- `socioeconomic AND lung cancer AND outcome`
+  - pubmed: 800 results
+- `Flatiron AND NSCLC`
+  - pubmed: 171 results
+- `MYLUNG consortium`
+  - pubmed: 2 results
+- `EGFR TKI AND treatment landscape`
+  - pubmed: 144 results
+- `KRAS G12C AND sotorasib OR adagrasib`
+  - pubmed: 605 results
