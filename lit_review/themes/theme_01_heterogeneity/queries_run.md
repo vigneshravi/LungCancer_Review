@@ -1,0 +1,29 @@
+# Queries Run — theme_01: Lung cancer molecular heterogeneity foundations
+
+- `(lung adenocarcinoma[MeSH] OR LUAD) AND (molecular subtype OR multi-omics OR integrative)`
+  - pubmed: 800 results
+  - europepmc: 36 results
+- `(lung squamous cell carcinoma OR LUSC) AND (molecular OR genomic) AND subtype`
+  - pubmed: 800 results
+  - europepmc: 193 results
+- `"small cell lung cancer" AND (genomic OR molecular subtype)`
+  - pubmed: 800 results
+  - europepmc: 180 results
+- `"small cell lung cancer" AND (ASCL1 OR NEUROD1 OR POU2F3 OR YAP1)`
+  - pubmed: 444 results
+- `NSCLC AND (genomic landscape OR mutational landscape)`
+  - pubmed: 800 results
+- `lung adenocarcinoma AND (EGFR OR KRAS OR TP53 OR ALK) AND (co-mutation OR comutation)`
+  - pubmed: 218 results
+- `lung cancer AND tumor heterogeneity AND molecular`
+  - pubmed: 800 results
+- `lung cancer AND driver mutation AND subtype`
+  - pubmed: 585 results
+- `"lung adenocarcinoma in situ" OR "minimally invasive adenocarcinoma"`
+  - pubmed: 600 results
+- `TCGA AND lung AND (genomic OR molecular)`
+  - pubmed: 800 results
+- `lung cancer AND proteogenomic`
+  - pubmed: 82 results
+- `lung cancer AND histologic transformation`
+  - pubmed: 800 results
