@@ -1,3 +1,10 @@
 lit_review/cache/
 __pycache__/
 *.pyc
+
+# Large files — too big for GitHub (use local or LFS)
+lit_review/metadata/all_papers.json
+lit_review/master/master_library.ris
+lit_review/themes/theme_01_heterogeneity/papers.json
+lit_review/themes/theme_04_ai_ml/papers.json
+lit_review/themes/theme_*/papers.json
