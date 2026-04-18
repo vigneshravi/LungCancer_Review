@@ -1,0 +1,29 @@
+# Queries Run — theme_06: Never-smoker lung cancer
+
+- `never smoker AND lung cancer AND (genomic OR molecular)`
+  - pubmed: 800 results
+  - europepmc: 192 results
+- `non-smoking lung adenocarcinoma AND (Asian OR East Asian)`
+  - pubmed: 53 results
+  - europepmc: 193 results
+- `EGFR mutation AND never smoker AND epidemiology`
+  - pubmed: 259 results
+  - europepmc: 199 results
+- `lung cancer etiology AND never smoker`
+  - pubmed: 800 results
+- `ALK fusion AND never smoker`
+  - pubmed: 122 results
+- `ROS1 AND never smoker AND lung`
+  - pubmed: 113 results
+- `lung cancer AND light smoker AND molecular`
+  - pubmed: 95 results
+- `tumor microenvironment AND never smoker AND lung`
+  - pubmed: 33 results
+- `immunotherapy response AND never smoker AND lung`
+  - pubmed: 61 results
+- `lung cancer AND mutational signature AND smoking`
+  - pubmed: 231 results
+- `second-hand smoke AND lung cancer`
+  - pubmed: 800 results
+- `never-smoker AND brain metastasis AND lung`
+  - pubmed: 22 results

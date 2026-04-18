@@ -1,0 +1,27 @@
+# Queries Run — theme_05: Sex and gender differences in lung cancer
+
+- `sex differences AND lung cancer AND (molecular OR outcome)`
+  - pubmed: 800 results
+  - europepmc: 181 results
+- `estrogen receptor AND (NSCLC OR lung adenocarcinoma)`
+  - pubmed: 610 results
+  - europepmc: 189 results
+- `gender disparity AND immunotherapy AND lung cancer`
+  - pubmed: 7 results
+  - europepmc: 195 results
+- `female AND lung adenocarcinoma AND EGFR AND never smoker`
+  - pubmed: 485 results
+- `sex hormone AND lung cancer`
+  - pubmed: 800 results
+- `pregnancy AND lung cancer`
+  - pubmed: 800 results
+- `sex chromosome AND cancer AND lung`
+  - pubmed: 320 results
+- `Y chromosome loss AND lung cancer`
+  - pubmed: 34 results
+- `gender AND survival AND NSCLC`
+  - pubmed: 800 results
+- `women AND lung cancer AND epidemiology`
+  - pubmed: 800 results
+- `sex-specific AND biomarker AND lung cancer`
+  - pubmed: 67 results
