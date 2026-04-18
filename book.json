@@ -7,17 +7,7 @@
   "structure": {
     "summary": "SUMMARY.md"
   },
-  "plugins": [
-    "theme-default",
-    "-sharing",
-    "expandable-chapters",
-    "back-to-top-button"
-  ],
-  "pluginsConfig": {
-    "theme-default": {
-      "showLevel": true
-    }
-  },
+  "plugins": ["-sharing"],
   "styles": {
     "website": "styles/custom.css"
   }
