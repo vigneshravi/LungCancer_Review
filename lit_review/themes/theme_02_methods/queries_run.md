@@ -1,0 +1,33 @@
+# Queries Run — theme_02: Multi-omics integration methods
+
+- `multi-omics integration AND (benchmark OR comparison OR evaluation)`
+  - pubmed: 800 results
+  - europepmc: 180 results
+- `"MOVICS" OR "DIABLO" OR "iCluster" OR "MOFA" OR "NEMO"`
+  - pubmed: 800 results
+  - europepmc: 179 results
+- `"similarity network fusion" OR "SNF" cancer`
+  - pubmed: 800 results
+  - europepmc: 188 results
+- `multi-omics clustering AND consensus`
+  - pubmed: 270 results
+- `integrative omics AND method AND cancer`
+  - pubmed: 800 results
+- `multi-omics AND deep learning AND integration`
+  - pubmed: 800 results
+- `variational autoencoder AND multi-omics`
+  - pubmed: 70 results
+- `graph neural network AND multi-omics AND cancer`
+  - pubmed: 117 results
+- `multi-modal AND deep learning AND cancer`
+  - pubmed: 394 results
+- `multi-omics factor analysis`
+  - pubmed: 800 results
+- `joint NMF AND multi-omics`
+  - pubmed: 5 results
+- `"late integration" OR "early integration" multi-omics cancer`
+  - pubmed: 17 results
+- `canonical correlation analysis AND omics`
+  - pubmed: 109 results
+- `Bayesian AND multi-omics AND cancer`
+  - pubmed: 87 results
