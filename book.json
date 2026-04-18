@@ -1,0 +1,24 @@
+{
+  "title": "Lung Cancer Multi-Omics & AI/ML Literature Review",
+  "description": "A systematic literature intelligence report: 66,879 papers across 12 themes covering multi-omics integration and AI/ML in lung cancer",
+  "author": "Vignesh Ravichandran",
+  "language": "en",
+  "root": "./docs",
+  "structure": {
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "theme-default",
+    "-sharing",
+    "expandable-chapters",
+    "back-to-top-button"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  },
+  "styles": {
+    "website": "styles/custom.css"
+  }
+}
