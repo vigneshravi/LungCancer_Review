@@ -9,3 +9,5 @@ lit_review/themes/theme_01_heterogeneity/papers.json
 lit_review/themes/theme_04_ai_ml/papers.json
 lit_review/themes/theme_*/papers.json
 .DS_Store
+_book/
+SUMMARY.html
