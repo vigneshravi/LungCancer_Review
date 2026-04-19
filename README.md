@@ -4,12 +4,15 @@
 
 ### A Systematic Literature Intelligence Report
 
+[![GitBook](https://img.shields.io/badge/Read_the_GitBook-blue?style=for-the-badge&logo=gitbook&logoColor=white)](https://vigneshravi.github.io/LungCancer_Review/)
 [![Papers](https://img.shields.io/badge/Papers-66%2C879-blue?style=for-the-badge)](lit_review/master/)
 [![Themes](https://img.shields.io/badge/Themes-12-coral?style=for-the-badge&color=e8655a)](docs/part-2-the-landscape/)
 [![PMIDs Verified](https://img.shields.io/badge/PMIDs_Verified-155%2F155-green?style=for-the-badge&color=4caf7d)](docs/pmid-verification-report.md)
 [![Target](https://img.shields.io/badge/Journal-npj_Precision_Oncology-gold?style=for-the-badge&color=d4a843)](https://www.nature.com/npjprecisiononcology/)
 
 ---
+
+**[Read the full report on GitBook](https://vigneshravi.github.io/LungCancer_Review/)**
 
 **66,879 unique papers** | **12 thematic chapters** | **213 queries** | **3 databases** | **155 verified citations**
 
@@ -23,7 +26,9 @@
 
 ## Read the Full Report
 
-**The GitBook is the best way to read this report.** It contains 12 book-chapter-length narrative syntheses, each with a NotebookLM-generated infographic, inline PMID-linked citations, and detailed analysis of consensus, controversy, and gaps.
+**[Read the full GitBook here: https://vigneshravi.github.io/LungCancer_Review/](https://vigneshravi.github.io/LungCancer_Review/)**
+
+The GitBook contains 12 book-chapter-length narrative syntheses, each with a NotebookLM-generated infographic, inline PMID-linked citations, and detailed analysis of consensus, controversy, and gaps.
 
 Browse the chapters:
 
