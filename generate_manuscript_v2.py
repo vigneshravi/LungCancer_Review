@@ -128,17 +128,21 @@ doc.add_page_break()
 doc.add_heading('Abstract', level=1)
 
 abstract_text = (
-    "Lung cancer remains the leading cause of cancer death worldwide. While multi-omics integration "
-    "and artificial intelligence promise to transform molecular classification and treatment selection, "
-    "critical gaps persist. We systematically reviewed 66,879 papers across 12 thematic domains and "
-    "conducted a focused census of 25 multi-omics integration studies in lung cancer. We identify a "
-    "fundamental methodological divide: 72% of studies use the MOVICS framework, 88% depend on TCGA "
-    "data, and the majority employ survival-based feature selection that collapses biological "
-    "heterogeneity into binary risk categories. Sex-stratified and never-smoker-focused multi-omics "
-    "analyses are virtually absent. No study integrates clinical features as competing inputs alongside "
-    "molecular data. Zero studies are prospective, and zero have produced companion diagnostics. We "
-    "propose a hierarchical framework that preserves biological taxonomy while enabling clinical risk "
-    "stratification, and outline priorities for closing these translational gaps."
+    "Lung cancer remains the leading cause of cancer death worldwide. Multi-omics integration "
+    "and artificial intelligence have advanced molecular classification, yet critical gaps "
+    "prevent clinical translation. Current subtype classifications fail to capture the "
+    "heterogeneity of non-small cell lung cancer, particularly in never-smokers and women, "
+    "who exhibit distinct mutational landscapes and remain underrepresented in genomic studies. "
+    "While proteogenomic profiling has revealed druggable targets invisible to genomics alone, "
+    "and deep learning models can predict molecular alterations from histopathology, these "
+    "advances have not reached clinical practice. Key barriers include reliance on single-cohort "
+    "retrospective data, absence of sex-stratified and never-smoker-focused analyses, "
+    "limited integration of clinical with molecular features, and methodological choices that "
+    "sacrifice biological resolution for prognostic convenience. Here, we review the current "
+    "landscape of multi-omics and AI/ML in lung cancer across molecular heterogeneity, "
+    "integration methods, population stratification, immune biomarkers, translational gaps, "
+    "and emerging technologies, and propose priorities for achieving clinically actionable "
+    "precision oncology."
 )
 add_para(abstract_text)
 print(f"Abstract word count: {word_count(abstract_text)}")
@@ -180,11 +184,12 @@ intro = (
 
     "Yet translation has stalled. Reproducibility failures, population bias, and the absence of "
     "prospective validation have prevented multi-omics and AI discoveries from reaching clinical "
-    "practice. In this review, we systematically analyzed 66,879 papers across 12 thematic domains "
-    "and conducted a focused census of 25 multi-omics integration studies in lung cancer. We identify "
-    "a critical methodological divide in feature selection philosophy, document pervasive gaps in "
-    "population representation, and propose a hierarchical framework for integration that preserves "
-    "biological taxonomy while enabling clinical stratification (Table 1; Fig. 1)."
+    "practice. In this review, we examine the current state of multi-omics integration and AI/ML "
+    "across the full spectrum of lung cancer research\u2014from molecular heterogeneity and "
+    "integration methods to underrepresented populations, immune biomarkers, translational "
+    "bottlenecks, and emerging technologies. We identify critical gaps in study design and "
+    "population representation, and outline priorities for achieving clinically actionable "
+    "precision oncology (Table 1; Fig. 1)."
 )
 add_para(intro)
 all_body_text.append(intro)
@@ -549,43 +554,38 @@ all_body_text.append(sec9)
 doc.add_heading('Discussion and future directions', level=1)
 
 sec10 = (
-    "The central finding of this review is that multi-omics integration in lung cancer is constrained "
-    "not by a lack of data or methods, but by a feature selection philosophy that prioritizes prognosis "
-    "over biology. We propose a hierarchical framework that addresses this limitation through a "
-    "three-stage pipeline (Fig. 3).\n\n"
+    "This review identifies several interconnected challenges that must be addressed to realize the "
+    "promise of multi-omics precision oncology in lung cancer. These span study design, methodology, "
+    "population representation, and clinical translation.\n\n"
 
-    "Stage 1 applies unsupervised biological clustering using variance-based features (MAD or SD) to "
-    "discover natural molecular subtypes without imposing a survival prior. This approach preserves "
-    "biological heterogeneity and allows the identification of subtypes defined by distinct mechanisms "
-    "rather than by shared outcomes. Stage 2 performs within-subtype clinical risk stratification using "
-    "multivariate methods\u2014elastic net regularization, WGCNA, or stability selection\u2014that "
-    "integrate both molecular and clinical features as competing predictors. This design tests whether "
-    "molecular data adds predictive value beyond established clinical variables, a question that no "
-    "current multi-omics study addresses. Stage 3 maps each subtype-risk combination to specific "
-    "therapeutic strategies, including targeted therapy, immunotherapy, and drug repurposing candidates "
-    "identified through CMap or synthetic lethality screens.\n\n"
+    "First, the field must diversify beyond TCGA. While TCGA has been invaluable, its dominance "
+    "(88% of integration studies) introduces population bias, limits the study of treatment-resistant "
+    "and longitudinal disease, and precludes validation in independent cohorts. The two institutional "
+    "cohort studies in our census demonstrate that prospectively collected, outcome-annotated "
+    "multi-omics data can reveal clinically relevant subtypes that TCGA re-analysis cannot capture. "
+    "More such cohorts\u2014particularly in East Asian, African, and Latin American "
+    "populations\u2014are urgently needed.\n\n"
 
-    "Several methodological improvements are immediately actionable. Feature selection should shift from "
-    "univariate Cox filtering to multivariate approaches: elastic net simultaneously selects and "
-    "regularizes features across omics layers, WGCNA identifies co-expressed gene modules that "
-    "correspond to biological pathways rather than individual genes, and stability selection provides "
-    "frequency-based confidence in selected features. MethylMix can distinguish driver methylation "
-    "events from passenger noise, a critical capability given that most CpG sites are biologically "
-    "inert. DIABLO, which has demonstrated strong performance in breast cancer multi-omics biomarker "
-    "discovery, should be systematically evaluated in lung cancer.\n\n"
+    "Second, population representation requires structural change. Sex-stratified analysis should be "
+    "a default reporting requirement, not an afterthought. Dedicated never-smoker cohorts with paired "
+    "multi-omics profiling are needed to characterize the biology of a disease that affects 10\u201325% "
+    "of patients globally. The exposome-to-subtype intersection\u2014connecting PM2.5, radon, and other "
+    "exposures to specific molecular subtypes\u2014remains unmapped.\n\n"
 
-    "Population representation requires structural change. Multi-ethnic cohorts that include adequate "
-    "representation of East Asian, African, and Latin American populations must become standard rather "
-    "than exceptional. Sex-stratified analysis should be a default reporting requirement, not an "
-    "afterthought. Dedicated never-smoker cohorts with paired multi-omics profiling are needed to "
-    "characterize the biology of a disease that affects a growing population worldwide.\n\n"
+    "Third, methodological choices in multi-omics integration deserve greater scrutiny. The dominant "
+    "approach of survival-based feature selection, while clinically intuitive, collapses biological "
+    "heterogeneity into binary risk categories. A hierarchical framework\u2014biological clustering "
+    "first to discover natural subtypes, then within-subtype risk stratification integrating both "
+    "molecular and clinical features\u2014would preserve the mechanistic resolution needed for "
+    "precision therapy (Fig. 3). Multivariate feature selection methods, including elastic net, "
+    "WGCNA, and stability selection, should replace univariate approaches. Clinical variables should "
+    "be incorporated as competing predictors rather than excluded from integration models.\n\n"
 
-    "Most critically, the field must move beyond retrospective TCGA re-analysis. Zero multi-omics "
-    "integration studies in lung cancer are prospective. Zero have produced companion diagnostics "
-    "approved for clinical use. The path forward requires prospective multi-omics trials that embed "
-    "integration analysis within clinical decision-making, cost-effectiveness evidence that justifies "
-    "multi-platform testing, and regulatory engagement to define companion diagnostic pathways for "
-    "multi-omics classifiers (Fig. 3)."
+    "Finally, prospective validation is the critical bottleneck. No multi-omics integration study in "
+    "lung cancer is prospective. None has produced a companion diagnostic. The path forward requires "
+    "trials that embed multi-omics integration within clinical decision-making, cost-effectiveness "
+    "evidence to justify multi-platform testing, and regulatory engagement to define approval "
+    "pathways for multi-omics classifiers (Fig. 4)."
 )
 add_para(sec10)
 all_body_text.append(sec10)
@@ -595,21 +595,22 @@ all_body_text.append(sec10)
 doc.add_heading('Conclusions', level=1)
 
 sec11 = (
-    "Multi-omics integration and artificial intelligence have revealed layers of biological complexity "
-    "in lung cancer that are invisible to any single molecular platform. Yet our census of 25 "
-    "integration studies exposes systematic limitations: 72% rely on the MOVICS framework, 88% depend "
-    "on TCGA data, and the dominant feature selection strategy\u2014survival-based Cox filtering\u2014"
-    "collapses biological heterogeneity into binary risk categories that cannot guide precision "
-    "therapy. Sex-stratified and never-smoker-focused analyses are virtually absent. Clinical features "
-    "are excluded from integration models. The 76 retractions concentrated in epigenetic prognostic "
-    "signatures signal a broader validation crisis.\n\n"
+    "Multi-omics integration and AI/ML have revealed layers of biological complexity in lung cancer "
+    "that are invisible to any single molecular platform. Proteogenomic studies have identified "
+    "druggable targets that genomics alone would miss. Deep learning models decode molecular "
+    "information from tissue morphology. Single-cell and spatial technologies map tumor ecosystems "
+    "at unprecedented resolution. Yet the translation of these discoveries into clinical benefit "
+    "has been constrained by reliance on retrospective, single-cohort data; the systematic exclusion "
+    "of never-smokers, women, and non-European populations; and the absence of prospective "
+    "validation.\n\n"
 
-    "Closing these gaps requires a shift in both methodology and study design. Hierarchical "
-    "integration that separates biological discovery from clinical risk stratification, multivariate "
-    "feature selection that tests molecular against clinical predictors, population-specific cohorts "
-    "that include never-smokers and diverse ancestries, and prospective validation trials that connect "
-    "multi-omics subtypes to therapeutic decisions\u2014these are the priorities that will determine "
-    "whether the promise of multi-omics precision oncology is realized in lung cancer."
+    "Closing these gaps requires coordinated action across multiple fronts: diversifying cohorts "
+    "beyond TCGA, embedding sex-stratified and ancestry-inclusive analysis as standard practice, "
+    "integrating clinical alongside molecular features in computational models, and advancing "
+    "from retrospective subtype discovery to prospective trials that connect multi-omics "
+    "classifications with therapeutic decisions. The tools exist. The data are accumulating. "
+    "What remains is the will to apply them equitably and validate them rigorously\u2014for all "
+    "lung cancer patients, including those who have been most consistently overlooked."
 )
 add_para(sec11)
 all_body_text.append(sec11)
@@ -843,7 +844,7 @@ add_para(
 
 doc.add_heading('Author contributions', level=1)
 add_para(
-    "V.R. conceived the study, conducted the systematic literature search and census of multi-omics "
+    "V.R. conceived the study, performed the literature review and analysis of multi-omics "
     "integration studies, and wrote the manuscript. S.R. supervised the project and critically revised "
     "the manuscript. All authors approved the final version."
 )
